@@ -1,0 +1,404 @@
+
+
+/*RESPONSIVE*/
+
+@media all and (max-width: 767px) and (min-width: 320px) {
+
+/*MOBILE 573*/
+  #course_search_submit {
+      right: 5px;
+      top: 9px;
+  }
+  #course_search_frame, .home_page #course_search_frame {
+      margin-bottom: 30px !important;
+  }
+
+  #course_search_frame .span5 {
+      max-width: 100% !important;
+  }
+  /*Featured content*/
+
+
+
+
+    /*610*/
+  .home_page #featured_sections_frame .row .span4 {
+      width: 100% !important;
+  }
+
+  .home_page .latest_news_left, .home_page .latest_news_right {
+    width: 100% !important;
+  }
+  .home_page .latest_news_left {
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .home_page #latest_feeds, .home_page #latest_news_frame {
+    width: 90% !important;
+    margin: 0 auto;
+    display: block;
+    margin-left: 5% !important;
+  }
+  .home_page #main_content_main_column #latest_feeds_twitter_col {
+      width: 87% !important;
+      min-width: 100% !important;
+      height: 160px;
+      min-height: 160px;
+      margin: 0 auto;
+  }
+  /*436 mobile-responsive*/
+  #footer_location_map_holder {
+    width: 100%;
+    float: left;
+  }
+
+  /*692*/
+  .home_page .latest_news_type span {
+      position: relative;
+  }
+}
+
+
+
+@media all and (max-width: 990px) and (min-width: 768px) {
+    /*Header and Menu*/
+    #main_menu {
+        margin-left: 210px;
+    }
+
+    #main_menu_list > li a {
+        font-size: 0.7em;
+        padding: 6px;
+    }
+
+    .home_page header,
+    .home_page nav {
+        max-width: 826px;
+    }
+
+    form.span7.search-space {
+        margin: 20px 0 0 285px;
+    }
+
+    #main_menu_list > li ul.dropdown-menu li.nav-header a {
+        font-size: 1em;
+    }
+
+    .megamenu-column {
+        width: 184px;
+    }
+
+    .dropdown-menu {
+        max-width: 810px !important;
+    }
+
+    #top_search_input {
+        font-size: 14px;
+        width: 60px;
+        height: 30px;
+    }
+    #top_search_submit {
+        margin-top: 0;
+    }
+
+    input#top_search_input:focus {
+        width: 150px;
+    }
+
+    #top_logo {
+        margin-top: -20px;
+    }
+
+    #top_logo a {
+        margin-top: -100px;
+    }
+
+    #top_logo::before {
+        background-size: 190px 86px;
+    }
+
+    li[data-pageid='1340'] ul.dropdown-menu {
+      left: -210px !important;
+    }
+
+    li[data-pageid='1396'] ul.dropdown-menu {
+      left: -120px !important;
+    }
+
+    /*Main  content*/
+    .home_page #main_content {
+        min-width: auto;
+    }
+    .home_page #latest_feeds_twitter_col,
+    .home_page #featured_sections_frame,
+    .home_page form.row.hidden-phone,
+    .home_page #main_content_main_column,
+    .home_page #home_banner {
+        min-width: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+    }
+    .home_page #main_content_main_column {
+        margin-top: 0;
+    }
+    .home_banner_image_title img {
+        top: 0px;
+    }
+
+    .home_page #home_banner {
+      height: 425px;
+      overflow: hidden;
+      margin-top: 0;
+    }
+
+    .home_page .banner-text-container {
+      margin: 270px auto 0 auto;
+    }
+
+    .home_page #latest_feeds_twitter_col {
+      width: 83.6% !important;
+      margin: 1% 8% !important;
+    }
+
+    .home_page .latest_news_type {
+        margin-top: 10px;
+    }
+
+    .home_page .latest_news_item {
+        min-height: 190px;
+    }
+
+    .home_page .latest_news_type span {
+        position: relative;
+    }
+
+    /*Course Search*/
+    #course_search_desc {
+      width: 100%;
+    }
+
+    #course_search_frame .span5 {
+      margin: 0 auto;
+      padding: 10px 0 0 0;
+      margin-top: 10px;
+    }
+
+    #course_search_desc p.line2 {
+      left: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #course_search_frame, .home_page #course_search_frame {
+      width: 100%;
+      height: 94px;
+    }
+    #course_search_submit {
+      position: relative;
+      right: 1px;
+      top: -51px;
+    }
+
+    /*Slider Text*/
+    .home_banner_image_title_line1,
+    .home_banner_image_title_line2 {
+        font-size: 3em;
+    }
+
+    .home_page .banner-text-container span .esmall {
+        font-size: 34px;
+        display: inline-block;
+        width: 17px;
+        border-bottom: 5px solid #ffffff;
+        vertical-align: top;
+        padding-bottom: 0px;
+        margin-top: 3px;
+        padding-right: 2px;
+    }
+
+
+    /*Featured content*/
+    .home_page #featured_sections_frame .span4 {
+        width: 31.4%;
+        min-height: 330px;
+    }
+    .home_page #featured_sections_frame {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .home_page #featured_sections_frame .row {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .latest_news_right .message_box_blue a,
+    .latest_news_left .message_box_blue a {
+        font-size: 0.8em;
+    }
+
+/*Footer*/
+    #footer_frame .container {
+      width: 100% !important;
+    }
+    #footer_bottom_social,
+    #footer_bottom_links {
+        width: 100%;
+    }
+    #footer_location_map_holder {
+        width: 100%;
+        margin: 20px 0 0 20px;
+    }
+    #footer_location_map_holder {
+        width: 100%;
+        margin: 20px 0 30px 20px;
+    }
+    #footer_frame .row-two {
+        float: left;
+        margin-top: 20px;
+    }
+    #footer_frame .row {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #footer_frame {
+        min-width: 900px;
+    }
+    #footer_bottom_links_list a {
+        font-size: 1.06em;
+    }
+    #latest_feeds_twitter_col .latest_news_item:after {
+        font-size: 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1280px) and (min-width: 989px) {
+  .home_page #latest_feeds_twitter_col {
+      width: 82% !important;
+      margin: 1% 8%;
+  }
+
+}
+
+@media screen and (max-width: 1680px) and (min-width: 981px){
+  .home_page #latest_feeds_twitter_col {
+      margin: 1% 8% !important;
+  }
+  #latest_feeds_twitter_col .latest_news_item:after {
+      font-size: 75px;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1680px) {
+  #footer_frame .container {
+      width: 80%;
+  }
+  .home_page #main_content_main_column #latest_feeds_twitter_col {
+      margin: 1% 8% !important;
+  }
+}
+
+
+
+
+
+
+
+/*2598*/
+.home_page #main_content_main_column form {
+    margin: 0 -9999rem;
+    padding: .25rem 9999rem;
+    background: #ff9933;
+    background: #ff9933\9;
+    height: auto;
+}
+
+/*2630*/
+.home_page #course_search_desc {
+    line-height: 1.2;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+/*2617*/
+.home_page #course_search_frame .span5 {
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 10px 0 0 0;
+    margin-top: 10px;
+    max-width: 420px;
+    position: relative;
+}
+
+/*7238*/
+#course_search_frame, .home_page #course_search_frame {
+    font-family: "Gilroy-SemiBold";
+    margin-bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: #ff9933;
+    position: relative;
+    max-width: 1002px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/*Featured content*/
+.home_page #featured_sections_frame .span4 {
+    width: 31.4%;
+    min-height: 330px;
+}
+.home_page #featured_sections_frame {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.home_page #featured_sections_frame .row {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*News and Feeds content*/
+.home_page .news_story {
+    width: 100%;
+    display: inline-block;
+}
+.home_page .latest_news_left, .home_page .latest_news_right {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px 15px 0px 0px !important;
+}
+.home_page .latest_news_left {
+    margin-left: 8%;
+}
+.home_page #main_content_main_column #latest_feeds_twitter_col {
+    width: 81.7%;
+    display: inline-block;
+    margin: 1% 8%;
+    min-width: auto;
+}
