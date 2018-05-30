@@ -1,0 +1,2049 @@
+/*
+FIDDLER
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 25 May 2018 13:48:09
+*/
+
+
+/*
+*
+*    Table of contents
+*
+*    1. General
+*    2. Header
+*       2.1 Top links
+*       2.2 Top logo
+*       2.3 Top search
+*       2.4 Top menu
+*    3. Footer
+*    4. Content
+*       4.1 Home page
+*           4.1.1 Home page image slider
+*           4.1.2 Search course
+*           4.1.3 Featured section
+*           4.1.4 Latest news
+*       4.2 Inner pages
+*           4.2.1 General
+*           4.2.2 Page content wrappers
+*           4.2.3 Social media
+*           4.2.4 Page top
+*           4.2.5 Case study slider
+*           4.2.6 Course page
+            4.2.6.1 - Course Page Burger menu
+*           4.2.7 Events
+*           4.2.8 News
+*           4.2.9 Course finder
+*           4.2.10 People finder & Maps
+*           4.2.11 Maps
+*           4.2.12 Case studies
+*           4.2.13 Popup course contact form
+*           4.2.14 KIS
+*           4.2.15 Event item
+*           4.2.16 Faculties and departments
+*           4.2.17 Mobile table - Timetable
+*           4.2.18 International map
+*           4.2.19 Other
+*           4.2.20 Tables mobile override
+*           4.2.21 Cookies popup
+*           4.2.22 - Top navigation pseudo arrow on burger menu
+*
+*/
+
+@media only screen and (min-width : 320px) and (max-width : 500px) {
+
+    .mob-quiz-hdr, .mob-quiz {
+       max-width: 100% !important;
+       width: 100% !important;
+       height: 1200px !important;
+
+    }
+
+    .mob-quiz {
+        height: 1050px !important
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+   .clearing-page .flex-control-nav {
+      bottom: 7px;
+   }
+
+    /* 1. General */
+    html, body { 
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+        width: 100%; 
+        background: #f5f5f5 url(http://www.lsbu.ac.uk/__data/assets/image/0018/123327/body-bg.png?v=0.0.4) 0 0 repeat-x; }
+
+    .show_mobile { display: block; }
+    .hide_mobile { display: none; }
+
+    .whole_content_holder {
+        padding: 0 2.5%;
+        width: 95%;
+    }
+
+    /*
+    .big-thumb .play-video a {
+        display: none;
+    }
+    */
+
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+        width: 100%;
+    }
+
+    .span12, .span5, .span7, .span4, .span6, .span3, .span9, .row-fluid .span3, .row-fluid .span4, .row-fluid .span6, .main_content_left_column_class {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+
+    .left30 {
+        padding-left: 0;
+    }
+
+    [class*="span"] {
+        margin-left: 0;
+        float: none;
+    }
+
+    .row {
+        margin-left: 0;
+    }
+    .home_page .row {
+        width: 100% !important;
+    }
+    h1 {
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+    .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+       width: 95% !important;
+    }
+    .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all li {
+        line-height: 25px;
+    }
+    #main_content_holder iframe {
+        max-width: 100%;
+        /*height: auto;*/
+    }
+    .scrollboxes {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .pagination .pages b, .pagination .pages a {
+        display: inline-block;
+        padding: 10px;
+    }
+    .faculties {
+        padding-left: 0;
+    }
+
+    /* work around for mobile device auto-fitting - android 4.0
+    #main_content_main_column p, #main_content_main_column_PL p, #main_content_main_column div, #main_content_main_column_PL div {
+        background-image:url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+        background-repeat:repeat;
+    }
+    */
+
+    /* 2. Header */
+    header, nav, #footer_frame .container, #breadcrumbs {
+        width: auto;
+        margin: 0 auto;
+        position: relative;
+        min-width: auto;
+    }
+    .whole_content_holder .container header,
+    .whole_content_holder .container nav{
+        width: 100% !important;
+        overflow: hidden;
+        min-width: 100%;
+    }
+    #breadcrumbs {
+        padding: 20px 20px;
+    }
+    #breadcrumbs .span12 {
+        margin-left:0;
+    }
+    /* 2.1 Top links */
+    #top_links {
+        width: 100%;
+        float: right;
+        margin: 5px 0px;
+        position: absolute;
+        right: 0 !important;
+        top: 0;
+        text-align: right;
+        z-index: 20;
+    }
+    #top_links ul {
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+    #top_links ul li {
+        display: inline-block;
+        float: none;
+        padding-right: 3%;
+        padding-left: 0;
+        border: none;
+    }
+    #top_links_list li:last-child {
+        border: none;
+        margin-right: 0;
+    }
+    #top_links_list li a {
+        font-size: 0.8em;
+    }
+
+    /* 2.2 Top logo */
+    #logo_search_section {
+        display: block;
+        float: none;
+        margin: 10px 0 0px;
+    }
+    #top_logo {
+        margin: 5px 0 0 0;
+    }
+    #top_logo img {
+        max-width: none;
+        height:0;
+    }
+    #top_logo:before {
+        width: 170px !important;
+        background-size: 170px;
+        margin-top: 0px;
+    }
+    /* 2.3 Top search */
+    #logo_search_section form.search-space {
+        margin: 80px 0 0 0;
+        width: 100% !important;
+    }
+    
+    #top_search {
+        float: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #top_search_input {
+        width: 95%;
+        padding: 0 0% 0 5%;
+        line-height: normal;
+        z-index: 11;
+        border: 0;
+        -webkit-transition-property: none;
+        -moz-transition-property: none;
+        -o-transition-property: none;
+        transition-property: none;
+    }
+    input#top_search_input:focus {
+        width: 95%;
+    }
+    #top_search_input_wrapper {
+        display: block;
+        text-align: left;
+        border:none;
+        margin-bottom: 3px;
+        width: 83%;
+    }
+    #top_search_input_wrapper span:last-child {
+        float: right;
+    }
+
+    #top_search_submit {
+        margin-top: 2px;
+    }
+    #course_search_frame, .home_page #course_search_frame {
+        margin-bottom: 30px !important;
+    }
+    #course_search_frame .span5 {
+        margin: 0;
+        max-width: 100% !important; 
+    }
+    #course_search_frame .span4 {
+        padding: 0;
+    }
+    /* 2.4 Top menu */
+    .navbar .container {
+        position: relative;
+    }
+    #mobile_menu_toggle {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0005/19085/bg_menu_mobile.png?v=0.2.1) center 9px no-repeat #ff9933;
+        float: right;
+        height: 36px;
+        margin-top: -39px;/*-46px;*/
+        width: 13%;
+    }
+    #main_menu {
+        padding-top: 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #main_menu_list li.main_menu_home {
+        display: none !important;
+    }
+    #main_menu_list > li:hover, #main_menu_list > li, #main_menu_list > li.active, #main_menu_list > li.active:hover {
+        display: block;
+        overflow: hidden;
+    }
+    #main_menu_list > li.active span, #main_menu_list > li.active > a > div {
+        background-image: none;
+    }
+    #main_menu_list > li.active a.dropdown-toggle {
+        background-color: #ff9933;
+        color: #fff !important;
+    }
+    #main_menu_list > li a {
+        text-align: left;
+        text-indent: 15px;
+        width:100%;
+        height: 25px;
+        padding-left: 0px !important;
+        border-left: none;
+    }
+    #main_menu .flyout_menu_arrow {
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+    }
+    #main_menu .dropdown-menu {
+        position: static;
+        float: none;
+        max-width: 100%;
+        background-color: #333333;
+        border-top: 2px solid #ffffff;
+        border-bottom: 2px solid #ff9933;
+    }
+    #main_menu .dropdown-menu .megamenu-column {
+        width: auto;
+        display: block;
+    }
+    #main_menu_list > li ul.dropdown-menu a {
+        font-size: 1em;
+        line-height: 2em;
+    }
+    #main_menu_list .megamenu-column li {
+        padding-left: 10px;
+    }
+    #main_menu .dropdown-menu .megamenu-column li ul li a {
+        width: 100%;
+        display: inline-block;
+        padding: 3px 0;
+        text-indent: inherit;
+    }
+    #main_menu_list li[data-pageid="4426"].active {
+        background: #ff9933;
+    }
+    #main_menu_list > li ul.dropdown-menu li.nav-header a {
+        color: #ff9933;
+        border-bottom: 3px solid #ff9933;
+    }
+    #main_menu_list > li ul.dropdown-menu a:hover {
+        text-decoration: none;
+    }
+    .navbar .nav li {
+        display: list-item;
+    }
+    .mob_main_nav_pointer_holder {
+        display: none;
+    }
+
+    .mob_pointer_type1 {
+        width: 38px;
+        height: 14px;
+        position: relative;
+        display: block;
+        z-index: 10;
+        margin: 52px auto 0;
+    }
+    #main_menu .navbar-inner {
+        min-height: none;
+        padding: 0;
+        border: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        background-clip: padding-box;
+        background: none;
+        box-shadow: 0;
+        margin:0;
+    }
+
+    /* 3. Footer */
+    #footer_frame, #footer_bottom {
+        min-width: 0;
+        padding: 20px 5%;
+        width: 90%;
+    }
+    #footer_awards_logos_list {
+        margin-left: 0px;
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #footer_awards_logos_list li {
+        float: left;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 8px auto !important;
+    }
+
+    #footer_awards_logos_list li:nth-child(odd) {
+      margin-right: 10px;
+    }
+
+      #footer_awards_logos_list li:nth-child(even) {
+      margin-left: 10px;
+    }
+
+    #footer_location_map_holder a {
+        color: #FFFFFF;
+        line-height: 2.9;
+    }
+    #footer_location_map_holder .message_box_blue {
+        margin: 0 auto 40px;
+        width: 200px;
+        text-align: center;
+    }
+    .message_box_blue.font_size_15px {
+        padding-left: 8px;
+    }
+    #footer_bottom_social, #footer_bottom_links {
+        width: 100%;
+    }
+
+    #footer_bottom_social_list {
+        float: none;
+        overflow: hidden;
+        text-align: center;
+    }
+    #footer_bottom_social_list li {
+        display: inline-block;
+        float: none;
+        margin-left: 2%;
+    }
+    #footer_bottom_social_list li a {
+        width: 39px;
+        height: 39px;
+        line-height: 39px;
+        font-size: 20px;
+    }
+
+    #footer_bottom_links_list {
+        margin-bottom: 20px;
+    }
+    #footer_bottom_links_list li {
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+        width: 50%;
+    }
+    #footer_bottom_links_list li.last-child a {
+        line-height: 16px;
+    } 
+    #footer_frame #view_mobile_trigger { display: none; }
+    #footer_frame #view_full_site_trigger {
+      background: none repeat scroll 0 0 #ff9933;
+      display: block;
+      font-size: 1em;
+      height: 45px;
+      line-height: 45px;
+      margin: 0 auto;
+      text-align: center;
+      width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #footer_frame .container {
+        width: 100% !important;
+    }
+    #footer_frame .container #footer_col2 {
+        margin-top:20px;
+    }
+    #footer_location_map_holder {
+        width: 100%;
+        float: left;
+    }
+    #footer_bottom_social {
+        margin-top: 20px;
+    }
+    #footer_copyrights_note {
+        text-align: center;
+        float:none;
+    }
+
+    .the-awards.footerlinks {
+        top: 0;
+    }
+    .row-two {
+        float: right;
+        padding-right: 0;
+    }
+    .home_page .row-two {
+        float: right;
+        padding-right: 0;
+    }
+    /* 4. Content */
+
+    /* 4.1 Home page */
+
+    /* 4.1.1 Home page image slider */
+    .flex-direction-nav {
+        display: none;
+    }
+    #home_banner {
+        height: auto;
+        min-width: 100% !important;
+    }
+    #home_banner_list li {
+        height: auto;
+    }
+    #main_content_main_column ul {
+        margin-bottom: 0;
+    }
+
+    #asset_contents_holder ul:last-child {
+        margin-bottom: 20px;
+    }
+
+    .banner-text-container {
+        position: absolute !important;
+        margin: 0 !important;
+        padding: 10px 0;
+        width: 100% !important;
+        bottom: 0;
+    }
+    .home_banner_image_title {
+        position: static;
+        margin-top: 0px;
+    }
+    .home_banner_image {
+        display: table;
+        table-layout:fixed;
+        width: 100%;
+        position: relative;
+    }
+    .home_banner_image img {
+        /* display: table-header-group; */
+        max-width: 100%;
+        height: auto;
+    }
+    .home_banner_image_title {
+        background-color: #ffffff;
+        display: table-footer-group;
+    }
+    .home_banner_image_title img{
+        position: static;
+    }
+    .home_banner_image_title_line1, .home_banner_image_title_line2 {
+        font-size: 2em;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .home_banner_image_title_line3 {
+        font-size: 1em;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #home_banner_nav_bullets_holder {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .home_page .flex-control-paging {
+        display: none;
+    }
+
+    /* 4.1.2 Search course */
+    .home_page #main_menu {
+        margin-bottom: 1px;
+    }
+    #main_content, 
+    #main_content_holder, 
+    #main_content_main_column {
+        min-width: 100% !important;
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    #main_content_main_column {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    #main_content_main_column form.hidden-phone {
+        display: table-header-group;
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+    #main_content_main_column form.hidden-phone .span3, #course_search_category {
+        display: none;
+    }
+    #main_content_main_column form.hidden-phone .span4 {
+        width: auto;
+        float: left;
+    }
+    #main_content_main_column form.hidden-phone .span4 {
+        width: auto;
+        float: right;
+        margin-right: 2%;
+        margin-top: -33px;
+        position: relative;
+    }
+    #course_search_frame {
+        background: #ff9933;
+        margin: 0 0 15px;
+        padding:10px 3% 0 3% !important;
+        width: 94% !important;
+        border: none;
+    }
+    #course_search_submit {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0013/123331/course-search-btn-mob.png?v=0.0.5) top right no-repeat;
+        height: 30px;
+        width: 30px;
+        text-indent: -9999px;
+        text-transform: capitalize;
+        right: 5px;
+        top: 9px;
+    }
+    #course_search_submit:hover, #course_search_submit:focus {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0013/123331/course-search-btn-mob.png?v=0.0.5) bottom right no-repeat;
+        height: 30px;
+        width: 30px;
+    }
+    #course_search_name {
+        width: 80%;
+        height: 34px;
+        padding: 0 16% 0 3%;
+        margin-bottom: 0;
+        float: none;
+        line-height: normal;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -khtml-border-radius: 7px;
+    }
+
+    #course_finder_search_input_mobile {
+        line-height: normal;
+    }
+
+    /* 4.1.3 Featured section */
+    #featured_sections_frame {
+        width: 100% !important;
+        min-width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    #featured_sections_frame > .row > .span4 {
+        width: 100%;
+    }
+    #featured_sections_frame > .row > .span4:first-child {
+        margin-left: 0px;
+    }
+    .featured_section_title {
+        padding: 0 3%;
+    }
+    #main_content_main_column #featured_sections_frame ul {
+        margin-bottom: 20px;
+    }
+
+    #featured_sections_frame .row .span4 {
+        margin-top: 20px;
+        margin-left: 0;
+        -webkit-box-shadow: 0px 7px 10px 0px rgba(204,204,204,0.75);
+        -moz-box-shadow: 0px 7px 10px 0px rgba(204,204,204,0.75);
+        box-shadow: 0px 7px 10px 0px rgba(204,204,204,0.75);
+    }
+
+    #featured_sections_frame .row .span4:first-child {
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+/*Homepage*/
+    .home_page #featured_sections_frame .row .span4 {
+        width: 100% !important;
+    }
+    
+    .home_page .latest_news_left, .home_page .latest_news_right {
+        width: 100% !important;
+    }
+    .home_page .latest_news_left {
+         margin-left: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .home_page #latest_feeds, .home_page #latest_news_frame {
+        width: 100% !important;
+        margin: 0 auto;
+        display: block;
+    }
+    .home_page #main_content_main_column #latest_feeds_twitter_col {
+        width: 87% !important;
+        min-width: 100% !important;
+        height: 160px;
+        min-height: 160px;
+        margin: 0 auto;
+    }
+    .home_page .latest_news_type span {
+        position: relative;
+    }
+
+    /* 4.1.4 Latest news */
+    #latest_news_frame .tabs li a span.arrow {
+        width: 50%;
+        margin-left: 0;
+        background-position: center 0;
+    }
+    #latest_news_frame .tabs li {
+        width: 50%;
+    }
+    #latest_news_frame .tabs a {
+        width: 100%;
+    }
+    .home_page .latest_news_left {
+        margin-left: 0;
+    }
+    #latest_news_frame .latest_news_item,
+    #latest_feeds .latest_news_item {
+        width: 90%;
+    }
+    .latest_news_left .latest_news_item,
+    .latest_news_right .latest_news_item {
+        padding: 20px 0;
+    }
+    #latest_feeds .latest_news_item {
+        margin-bottom: 40px;
+    }
+    #latest_feeds,
+    #latest_news_frame {
+        width:100% !important;
+    }
+    .row.news_story {
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+    #open_days_col {
+        padding-top: 10px;
+    }
+    .latest_news_item {
+        line-height: 1;
+        width: 90%;
+        padding-top: 15px;
+        min-height: 180px;
+    }
+    .news_story #latest_feeds {
+        margin-left: 0;
+    }
+    .latest_news_item_intro {
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    .latest_news_item_header {
+        width: 100%;
+    } 
+    .latest_news_type span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 7px 10px !important;
+        background: #25a196;
+        font-size: 0.8em;
+    }
+    .latest_news_column {
+        padding-top: 10px;
+    }
+    #latest_feeds .latest_news_item {
+        margin-bottom: 40px;
+    }
+
+    #latest_feeds_twitter_col {
+        width: 100% !important;
+        min-width:100% !important;
+        height: 160px;
+        min-height: 160px;
+    }
+    #latest_feeds_twitter_col .latest_news_item {
+        width: 100% !important;
+        margin-bottom: 100px;
+    }
+    #latest_feeds_twitter_col .latest_news_item_intro p {
+        padding-right: 5%;
+    }
+    .latest_feed_text {width: 86% !important;}
+
+    img.twitter_thumb {
+        display:none;
+    }
+    
+    #latest_feeds_twitter_col .latest_news_item {
+        color: #fff;
+    }
+    #latest_feeds_twitter_col .latest_news_item:after {
+        content: "\f099";
+        position: absolute;
+        top: 10px;
+        left: 6px;
+        font-size: 42px;
+        font-family: FontAwesome;
+    }
+    .message_box_blue a {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .home_page .message_box_blue a {
+        font-size: 0.8em;
+    }
+    .latest_news_right .message_box_blue a {
+        margin-left: 5%;
+    }
+    .latest_news_right .message_box_blue a + a {
+        margin-left: 30%;
+    }
+    #latest_feeds h2, #latest_news_frame h2 {
+        font-size: 1.8em;
+    }
+    /* 4.2 Inner pages */
+
+    /* 4.2.1 General */
+    img.main_image_w356 { max-width: 100%; height: auto; }
+    img.main_image_w356.pull-left { margin-bottom: 25px; float: none; }
+    .page_top {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0013/123421/top_of_page_bg_new.png?v=0.0.3) no-repeat scroll center 15px rgba(0, 0, 0, 0);
+        color: #000000;
+        display: block;
+        font-family: 'open sans';
+        font-size: 1.125em;
+        font-weight: 600;
+        margin: 0 auto 25px;
+        padding-top: 65px;
+        text-align: center;
+        width: 150px;
+    }
+    a.section_menu_link {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0009/19485/down_arrow.png?v=0.2.1) right center no-repeat;
+        margin: 10px 0 0 5%;
+        padding: 0 25px 0 0;
+        font-weight: normal;
+    }
+    #main_content_main_column blockquote {
+        width: 100%;
+    }
+
+    /* 4.2.2 Page content wrappers */
+    #main_content_main_column, #main_content_right_column {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90% !important;
+        min-width: 90% !important;
+    }
+    #main_content_right_column {
+        margin-top: 20px;
+    }
+    .home_page #main_content_main_column, .home_page #main_content_right_column {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .home_page #main_content_main_column {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    /* 4.2.3 Social media */
+    #social_media_share_page_mobile {
+        margin-bottom: 25px;
+        overflow: hidden;
+        font-weight: normal;
+    }
+    #social_media_share_page_mobile > span {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+
+    #social_media_share_page_mobile span {
+        vertical-align: top;
+    }
+
+    /* 4.2.4 Page top */
+    #top_of_page_link {
+        display: none;
+    }
+
+    /* 4.2.5 Case study slider */
+    #case_studies_slider_nav { display: none; }
+    #case_studies_slides_mobile {
+        list-style: none;
+    }
+    #case_studies_slides_mobile li {
+        display: none;
+        margin: 0 auto;
+        width: 85%;
+    }
+    #case_studies_slides_mobile li:nth-child(1) {
+        display: block;
+    }
+    #case_studies_slides_mobile li img {
+        width: 100%;
+        height: auto;
+    }
+    #case_studies_slides_mobile .lead {
+        background-color: #F0F0F0;
+        color: #000000;
+        font-size: 1em;
+        padding: 10px;
+        position: static;
+    }
+    #case_studies_slides_mobile .lead p {
+        margin-bottom: 0px;
+    }
+    .case_studies_slider_nav_list_mobile {
+        background-color: #F0F0F0;
+        list-style: none outside none;
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .case_studies_slider_nav_list_mobile li {
+        float: left;
+        margin-left: 15%;
+    }
+    .case_studies_slider_nav_list_mobile li.last-child {
+        float: right;
+        margin-left: 0;
+        margin-right: 15%;
+    }
+
+    /* 4.2.6 Course page */
+    /*body.course_information_page #main_content_holder > div.row {*/
+    #main_content_holder > div.row {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    /* body.course_information_page #main_content_holder #main_content_left_column { */
+    #main_content_holder #main_content_left_column {
+        display: table-footer-group;
+    }
+    body.course_information_page #main_content_left_column .tabs-left {
+        margin: 0 2.5%;
+        width: 95%;
+    }
+
+    /* body.course_information_page a.section_menu_link { */
+    a.section_menu_link {
+        display: inline-block;
+    }
+
+    #main_content_left_column .tabs-left li:first-child a  {
+        background-color: #ffffff;
+        color: #737373;
+        font-size: 1em;
+    }
+    #main_content_left_column .tabs-left li.active a, #main_content_left_column .tabs-left li:first-child a:hover {
+        background-color: #ff9933;
+        color: #231f20;
+        font-size: 1em;
+    }
+
+    .overview_course_info_table td {
+        display: block;
+        padding: 10px 5%;
+        text-align: left;
+        width: 90%;
+        overflow: hidden;
+        float: left;
+        clear: left;
+        border-right: 0;
+    }
+    .overview_course_info_table tr td {
+        background-color: #ffffff;
+    }
+    .overview_course_info_table tr:nth-child(2n+1) td {
+        background-color: #F9F9F9;
+    }
+    .overview_course_info_table td span {
+        float: left;
+        font-weight: bold;
+        width: 35%;
+    }
+    .overview_course_info_table td div {
+        float: right;
+        width: 60%;
+    }
+
+    #main_content_right_column .message_box_blue_pointer_down {
+        background: none;
+        width:auto;
+    }
+
+    #upcoming_events_down_button, #upcoming_events_up_button, #latest_news_up_button, #latest_news_down_button {
+        /*visibility: hidden;*/
+    }
+    /*
+    #upcoming_events_rhs, #latest_news_rhs {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    */
+
+    #upcoming_events_rhs .caroufredsel_wrapper, #latest_news_rhs .caroufredsel_wrapper, #department .caroufredsel_wrapper {
+        height: 210px !important;
+    }
+    #latest_news_rhs .caroufredsel_wrapper {
+        margin-bottom: 20px !important;
+    }
+    .department-scrollbox .scrollbox {
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+    }
+
+    .mobile_events_down, .mobile_news_down {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0004/19588/bottom_arrow_big.png?v=0.2.1) top left no-repeat;
+        width: 47px;
+        height: 47px;
+        margin: -40px auto 30px;
+    }
+
+    #main_content_main_column .tab-content {
+        overflow: visible;
+    }
+
+    .accreditation_logos_holder ul.accreditation_logos li {
+        margin-left: 0;
+    }
+    #course_info_page_student_work .thumbnails {
+        margin-left: 0;
+    }
+    #course_info_page_student_work .thumbnails > li {
+        clear: both;
+        float: none;
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    #course_info_page_student_work .thumbnails > li img {
+        width: 100%;
+        height: auto;
+    }
+
+    #tab_modules ul.custom_accordion {
+        margin: 10px 0;
+    }
+
+    .course-staff-listing img {
+        margin-bottom: 15px;
+    }
+    #course_info_page_case_studies_list .media > .pull-left {
+        float: none;
+        margin: 0;
+    }
+    #course_info_page_case_studies_list > li > a > img {
+        max-width: 100%;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    #course_info_page_case_studies_list > li > a > img,
+    #course_info_page_case_studies_list_overview > li > a > img,
+    #course_info_page_facilities_list > li > a > img {
+        max-width: none;
+        margin-top: 1px;
+    }
+    
+/* 4.2.6.1 - Course Page Burger menu*/
+    .course_information_page #page_title {
+        margin-bottom: -10px;
+    }
+    .course_information_page #main_content_holder .tabs-left.close {
+        overflow: visible;
+        display: none;
+    }
+    .course_information_page #course_information_page_lhs_tabs {
+      width: 100%;
+    }
+    .course_information_page #course_information_page_lhs_tabs > li.active:first-child a,
+    .course_information_page #course_information_page_lhs_tabs > li.active:first-child:hover a,
+    .course_information_page #course_information_page_lhs_tabs > li:first-child a,
+    .course_information_page #course_information_page_lhs_tabs > li:first-child a:hover,
+    .course_information_page #course_information_page_lhs_tabs > li:first-child:hover a {
+      border: 0;
+      border-radius: 0;
+    }
+    .course_information_page .tabs-left > .nav-tabs > li > a:hover,
+    .course_information_page .tabs-left > .nav-tabs > li > a:focus {
+      background:#ff9933;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+      padding: 9px 15px;
+    }
+    .course_information_page .tabs-left a {
+      font-weight: 400;
+      display: block;
+      padding: 9px 15px;
+      color: #737373;
+      border: 0;
+    }
+    .course_information_page .tabs-left a:hover {
+      color: #000000;
+      background-color: #ff9933;
+      border: 0;
+      border-radius: 0;
+    }
+    .course_information_page .mob_main_left_nav {
+      width: 100%;
+      display: block;
+      position: relative;
+      float:left;
+      background: #fff;
+    }
+    .course_information_page .mob_main_left_nav_btn.fa.fa-bars {
+      font-size: 40px;
+      text-align: left;
+      cursor: pointer;
+      display: block;
+      width: 60px;
+      line-height: 30px;
+      border-radius: 0;
+      height: auto;
+    }
+    .course_information_page #main_content_main_column {
+        position: relative;
+    }
+
+    /* 4.2.7 Events */
+    .main_content_inner_left_column {
+        float: none;
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    .mobile_side_search_box fieldset {
+        padding: 15px 10px 15px 10px;
+        background: none;
+        position: relative;
+    }
+    .mobile_side_search_box fieldset input[type="text"] {
+        margin: 10px 0;
+        display: block;
+        width: 90%;
+        line-height: normal;
+    }
+    .mobile_side_search_box fieldset div, .mobile_side_search_box fieldset input[type="submit"] {
+        float: left;
+    }
+    .side_filter_box .accordion {
+        margin-bottom: 0;
+    }
+    .checkbox_filters_list .input_label, .course_compare_checkbox_holder .input_label {
+        font-weight: bold;
+    }
+    .side_filter_box #case_study_filter {
+        display: none;
+    }
+    /* .checkbox_filters_list label:focus, .checkbox_filters_list label:hover {
+      background-position: left -21px;
+    }*/
+    #campus_map_tab_content .checkbox_filters_list input[type="checkbox"] + label:hover {
+        background-position: left 3px;
+    }
+    #campus_map_tab_content .checkbox_filters_list input[type="checkbox"]:checked + label:hover {
+        background-position: left -21px;
+    }
+    #calendarTable table {
+        width: 100% !important;
+    }
+    #calendarTable td {
+        padding: 10px 0 !important;
+    }
+    .ev-list .events-item {
+        padding: 95px 0 0;
+    }
+    .ev-list .recommended .events-item {
+        padding: 20px 0 0;
+    }
+    .ev-list li {
+        overflow: hidden;
+    }
+    .ev-list .bar-mini {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .ev-list .recommended_message {
+        float: none;
+    }
+
+    #main_content_main_column ul.pagination {
+        margin-bottom: 20px;
+    }
+
+    #courses-no-results {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    #find-event-select {
+        left: 22px;
+    }
+
+    #event_search_category_mobile {
+        height: 41px;
+        padding-left: 10px;
+        overflow: hidden;
+        background: #fff;
+        border: solid 2px #dadada;
+        float: left;
+        display: inline;
+        color: #231f20;
+        line-height: 2.5;
+        background: #fff;
+        width: 180px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 20;
+        overflow: hidden;
+        text-align: right;
+    }
+
+    #event_search_category_trigger_mobile, #event_search_category_trigger_mobile:focus, #event_search_category_trigger_mobile:hover {
+        display: inline-block;
+        height: 41px;
+        position: relative;
+        right: 0;
+        width: 41px;
+        z-index: 100;
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0011/21710/search_courses_select_bg.png?v=0.1.1) no-repeat right top;
+        text-decoration: none;
+    }
+
+    #event_search_category_mobile p {
+      display: none;
+    }
+
+    #find-event-select-mobile {
+        position: absolute;
+        height: 43px;
+        width: 130%;
+        overflow: hidden;
+        background: #fff;
+        border: 0;
+        color: #929292;
+        line-height: 2.5;
+        font-size: 1.125em;
+        font-size: 1em;
+        font-family: 'open sans';
+        clear: both;
+        left: 0;
+        z-index: 10;
+        /*
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+        */
+        background-image: -webkit-linear-gradient(#ffffff, #ffffff);
+        background-image: -o-linear-gradient(#ffffff, #ffffff);
+        background-image: linear-gradient(#ffffff, #ffffff);
+        margin-left: 5px;
+    }
+
+    #events_finder_page_main_search_form_mobile fieldset label:first-child {
+        display: none;
+    }
+
+    #events_finder_page_main_search_form_mobile #find-event-mobile {
+        margin-top: 0;
+    }
+
+
+    /* 4.2.8 News */
+    #main_content_main_column #news_listing {
+        margin-bottom: 20px;
+    }
+
+    #news_listing .media a.pull-left {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+    }
+    #news_listing  li  a.pull-left img {
+        display: inline;
+        margin-bottom: 15px;
+    }
+
+    .campaign_landing_page #news_listing h4{
+        margin-top:20px;
+    }
+
+    #news_listing > li > a.pull-left img {
+        max-width: 100%;
+    }
+    /* 4.2.9 Course finder */
+    #main_content_left_column_PL, .two_columns_page_main_content {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .az_pagination > li {
+        margin: 6px
+    }
+    .az_pagination a {
+        line-height: 1.6;
+        width: 39px;
+        height: 39px;
+    }
+    .az_pagination {
+        margin-left: 10px;
+    }
+    #courses_listing .accordion-heading .accordion-toggle {
+        padding-left: 24px;
+        padding-right: 50px;
+        background-position: -20px -49px;
+    }
+    #courses_listing .accordion-heading .accordion-toggle.active,
+    #courses_listing .active.accordion-heading .accordion-toggle {
+        background-position: -62px -4px;
+    }
+    div.az-toggle {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0016/4246/lhs_news_filter_accordion_header_bg.png?v=0.0.9) no-repeat scroll -20px -50px #FFFFFF;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 20px;
+    }
+    ul.az_pagination {
+        display: none;
+        overflow: hidden;
+    }
+
+    .course_finder #main_content_main_column_PL ul.az_pagination {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 256px;
+        max-width: 100%;
+    }
+
+    .course_finder .az-toggle {
+        display: none;
+    }
+
+    #main_content_main_column h2.list_by_course_title {
+        margin-top: 20px;
+    }
+
+    /* 4.2.10 People finder & Maps */
+    #main_content_main_column > img.main_image_w155.pull-right.people_inner_photo {
+        display: inline;
+        margin-left: 0;
+        float: none;
+    }
+
+    #main_content_main_column #people_listing {
+        margin-bottom: 20px;
+    }
+    #people_listing .media a.pull-left {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        display: block;
+    }
+    #people_listing .media a.pull-left img {
+        display: inline;
+        max-width: 100%;
+        height: auto;
+    }
+    #people_listing .right_column {
+        width: 100%;
+    }
+
+    #main_content_main_column > img.main_image_w155.pull-right {
+        display: block;
+        float: none;
+        margin: 0 auto 15px auto;
+    }
+    #main_content_main_column h2.people_inner_page, .personal_info_list {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+
+    .personal_info_list .left_column, .personal_info_list .right_column {
+        float: none;
+        width: 100%;
+    }
+
+    #main_content_main_column #people_inner_main_tabs_nav, #main_content_main_column #southwark_directions_tab_nav, #main_content_main_column #havering_directions_tab_nav {
+        margin-bottom: 20px;
+    }
+
+    #people_inner_main_tabs_nav li, #southwark_directions_tab_nav li, #havering_directions_tab_nav li {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    #people_inner_main_tabs_nav li a, #southwark_directions_tab_nav li a, #havering_directions_tab_nav li a {
+        height: 40px;
+    }
+
+    #people_inner_main_tabs_nav li {
+        margin-bottom: 2px;
+    }
+
+    #people_listing .media > a img {
+        margin-bottom: 15px;
+    }
+    .people_finder #main_content_main_column_PL ul.az_pagination {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 256px;
+        max-width: 100%;
+    }
+    .people_finder .az-toggle {
+        display: none;
+    }
+    #southwark_directions_tab_nav li a, #havering_directions_tab_nav li a {
+        line-height: 40px;
+    }
+    #people_inner_main_tabs_nav li:hover a, #southwark_directions_tab_nav li:hover a, #havering_directions_tab_nav li:hover a {
+        height: 40px;
+    }
+    #people_inner_main_tabs_nav li.active span, #campus_map_tab_nav_holder li.active span {
+        background-image: none;
+    }
+    .campus_google_map_holder {
+        height: 320px;
+    }
+
+    #people_inner_main_tabs_nav li a, #people_inner_main_tabs_nav li a.active, #people_inner_main_tabs_nav li a:hover, #people_inner_main_tabs_nav li a.active:hover, #people_inner_main_tabs_nav li:hover a {
+        height: 66px;
+    }
+
+    #people_inner_main_tabs_nav > li > a {
+        display: table;
+        width: 100%;
+        padding: 0;
+    }
+
+    #people_inner_main_tabs_nav > li > a > span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    /* 4.2.11 Maps */
+    #campus_map_tab_nav_holder {
+        margin-bottom: 20px;
+    }
+    #campus_map_tab_nav_holder li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .info_window {
+        width: 100%;
+    }
+    .info_window_body {
+        display: none;
+    }
+    .info_window_header {
+        max-width: 90%;
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+
+    /* 4.2.12 Case studies */
+    .listing_page_main_search_form_holder {
+        padding: 15px 10px 15px 10px;
+        width: auto;
+    }
+    .listing_page_main_search_form_holder .description {
+        margin-bottom: 7px;
+        width: auto;
+        display: none;
+    }
+    .listing_page_main_search_form_holder .description p {
+        margin-left: 0;
+    }
+    .listing_page_main_search_form_holder input[type="text"] {
+        width: 60%;
+    }
+    .listing_page_main_search_form_holder {
+        background-image: none;
+    }
+    .side_filter_box #news_listing_page_filter {display:none;}
+
+    /* 4.2.13 Popup course contact form */
+    #ukeu_get_in_touch_form {
+        width: 95%;
+        padding: 15px 2.5%;
+    }
+    #ukeu_get_in_touch_form label, #ukeu_get_in_touch_form input[type="text"] {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    #ukeu_get_in_touch_form input[type="text"], #ukeu_get_in_touch_form textarea {
+        width: 95%;
+        padding: 2.5%;
+    }
+
+    #ukeu_get_in_touch_form #sq_security_key, #ukeu_get_in_touch_form #SQ_SYSTEM_SECURITY_KEY_VALUE {
+        margin: 0 0 10px;
+    }
+    #ukeu_get_in_touch_form .submit {
+        width: 100%;
+    }
+    #ukeu_get_in_touch_form input[type="submit"] {
+        width: 100%;
+    }
+
+    /* 4.2.14 KIS */
+    .kis_popup_holder {
+        width: 95%;
+        padding: 2.5%;
+        overflow-x: auto;
+    }
+    .kis_popup_holder .accordion-inner {
+        overflow: scroll;
+    }
+
+    /* 4.2.15 Event item */
+    table.info th {
+        width: 130px;
+    }
+
+    /* 4.2.16 Faculties and departments */
+    #faculties-and-departments .description {
+        position: static;
+    }
+    #faculties-and-departments .group {
+        height: auto;
+        background-image: none;
+    }
+
+    #faculties-and-departments hr.hr_type_1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .padding15lr #faculties-and-departments, .padding15lr #social_media_share_page {
+        padding: 0;
+    }
+
+    #faculties-and-departments > .row-fluid > .span6 {
+        border-top: 1px solid #E7E7E7;
+        padding-top: 25px;
+        margin-top: 15px;
+    }
+
+    #faculties-and-departments > .row-fluid:first-child > .span6:first-child {
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+    }
+
+    .faculties_row {
+        border: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .faculties_row .span4 {
+        border-top: 1px solid #E7E7E7;
+        padding-top: 25px;
+    }
+    .faculties_row:first-child .span4:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    #department .big-thumb {
+        background: none !important;
+        height: auto;
+    }
+
+    .big-thumb .play-video.hide_mobile {
+        display: none;
+    }
+
+    .play-video-mobile {
+        position: relative;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .play-video-mobile .cell-middle {
+        display: block;
+    }
+
+    .play-video-mobile .cell-middle a {
+        margin: 0 auto;
+    }
+
+    .play-video-mobile a {
+        background-image: url(http://www.lsbu.ac.uk/__data/assets/image/0005/23864/play-video-150px-v2.png?v=0.0.3);
+        background-position: left -88px;
+        background-repeat: no-repeat;
+        display: block;
+        height: 70px;
+        text-indent: -9999px;
+        width: 150px;
+    }
+
+    .play-video-mobile a:hover, .play-video-mobile a:focus, .play-video-mobile a:active {
+        background-position: left -1px;
+    }
+
+    .department_landing_page_promoted_links .row .span3 {
+        border-top: 1px solid #E7E7E7;
+        padding-top: 25px;
+    }
+    .department_landing_page_promoted_links .row:first-child .span3:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .department_landing_page_promoted_links hr:last-child {
+        display: block;
+    }
+
+    /* 4.2.17 Mobile table - Timetable */
+    table.mobile_table {
+        width: 100%;
+    }
+    table.mobile_table td {
+        display: block;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+    }
+    table.mobile_table td span.row_head {
+        display: block;
+        float: left;
+        font-weight: bold;
+        text-align: left;
+        width: 40%;
+        padding: 5px 10px;
+    }
+    table.mobile_table td span.row_value {
+        display: block;
+        float: left;
+        text-align: left;
+        width: 45%;
+        padding: 5px 10px;
+    }
+
+    /* 4.2.18 International map */
+    .world-map-mobile {
+        margin-bottom: 15px;
+    }
+    .world-map-mobile a {
+        display: block;
+    }
+    #international .letters a {
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 1.6;
+        margin: 6px;
+        width: 39px;
+        padding: 0;
+    }
+    #international .international_infobox .mobile_pointer_down {
+        border-left: 16px solid rgba(0, 0, 0, 0);
+        border-right: 16px solid rgba(0, 0, 0, 0);
+        border-top: 11px solid rgba(0, 0, 0, 0.5);
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 43px;
+        left: 11px;
+    }
+
+    /* 4.2.19 Other */
+    .listing_page_main_search_form_holder input[type="text"] {
+        line-height: normal;
+    }
+    .landing-simple-links-col, .department-scrollbox {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    .landing-simple-links-row .landing-simple-links-col {
+        border-top: 1px solid #E7E7E7;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .landing-simple-links-row:first-child .landing-simple-links-col:first-child {
+        border-top: 0;
+        padding-top: 0px;
+    }
+    .big-thumb .overlay-table {
+        width: auto;
+        max-width: 100%;
+        float: none;
+    }
+    .big-thumb .overlay-table .cell-middle {
+        vertical-align: bottom;
+    }
+    .featured-landing .span3 {
+        margin-bottom: 15px;
+    }
+    .featured-landing .max_width_100 {
+        max-width: 100%;
+    }
+
+    .featured-landing {
+        border: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .featured-landing .span3 {
+        border-top: 1px solid #E7E7E7;
+        padding-top: 25px;
+    }
+    .featured-landing:first-child .span3:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .top_level_landing .featured-landing img {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .mobile_ajax_content {
+        padding-bottom: 20px;
+    }
+    .form-standard {
+        margin-bottom: 20px;
+    }
+    .form-standard input[type="text"], .form-standard textarea, .form-standard .cover, .form-standard .submit {
+        max-width: 100%;
+    }
+    .form-standard .cover select {
+        width: 130%;
+    }
+
+/*
+    .form-standard .cover {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0003/23718/arrow_down_15.png?v=0.1.1) right center no-repeat;
+    }
+
+    #form_email_17687_submit {
+        background: url(http://www.lsbu.ac.uk/__data/assets/image/0003/23718/arrow_down_15.png?v=0.1.1) right center no-repeat;
+    }
+*/
+
+    #sq_security_key {
+        margin-left: 0;
+    }
+    #SQ_SYSTEM_SECURITY_KEY_VALUE {
+        margin-left: 0;
+    }
+    #sq_regen_captcha {
+        width: 40%;
+    }
+    .form-standard .submit {
+        text-align: center;
+    }
+    .form-standard label {
+        text-align: left;
+    }
+    .form-standard .error {
+        margin-bottom: 20px;
+        margin-left: 18px;
+        width: auto;
+    }
+    #site-search-input-mobile {
+        height: 41px;
+        width: 60%;
+        margin: 0;
+    }
+    #site_wide_search_main_form_mobile input[type="submit"] {
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+    #site_wide_search_main_form_mobile label {
+        margin-bottom: 17px;
+        display: none;
+    }
+    /*
+    input[type="submit"] {
+        font-size: 0;
+        text-indent: -9999px;
+    }
+    */
+    /* top level landing page */
+    .top_level_landing .row.featured-landing .span3 {
+        width: 100%;
+        margin-left:0;
+    }
+    .top_level_landing .big-thumb {
+        height: auto;
+        background: none !important;
+        min-height: auto !important;
+    }
+    .big_thumb_image_mobile {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* styling for 'Thank you page', which has got blank paintlayout applied */
+    body > form > .form-standard {
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    .mobile_go_back_button_holder {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mobile_go_back_button {
+        text-decoration: underline;
+        display: inline-block;
+        height: 25px;
+    }
+
+    #get_a_prospectus_content {
+      padding: 10px;
+    }
+
+    /* campaign landing page */
+    #campaign .title {
+        width: 30%;
+    }
+    /*
+    #campaign_landing_page_slider {
+        height: auto;
+    }
+    #campaign_landing_page_slider_list li {
+        height: auto;
+    }
+    */
+    #campaign_landing_page_video, #campaign_landing_page_slider_list .slider_image {
+        margin-left: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    #campaign_landing_page_video a.play-video {
+        background-size: 100%;
+        right: auto;
+        top: 0;
+        height: 62px;
+        width: 140px;
+    }
+    #campaign_landing_page_video a.play-video:hover {
+        background-position: 0 -63px;
+    }
+    #campaign_landing_page_video p.campaign_landing_page_video_title, #campaign_landing_page_video p.campaign_landing_page_video_subtitle, .slider_image_title_line2, .slider_image_title_line1 {
+        position: static;
+        background: none;
+    }
+    .slider_image_title {
+        position: static;
+        margin-top: 0px;
+    }
+    .slider_image {
+        display: table;
+        table-layout:fixed;
+        width: 100%;
+    }
+    .slider_image img {
+        /* display: table-header-group; */
+        max-width: 100%;
+        height: auto;
+    }
+    .slider_image_title {
+        background-color: #ffffff;
+        display: table-footer-group;
+    }
+    .slider_image_title img{
+        position: static;
+    }
+    #slider_nav_bullets_holder {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .font_size_15px {
+        font-size: 15px;
+    }
+    .max_width_100 {
+        max-width: 100%;
+    }
+    #main_content_main_column ul:last-child, #main_content_main_column_PL ul:last-child {
+        margin-bottom: 20px;
+    }
+
+    .pagination .link_prev_page a, .pagination .link_next_page a {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .promobox_full_width_mobile {
+        margin-bottom: 20px;
+    }
+    .two_columns_page_main_content .promobox_full_width_title {
+        width: 100%;
+        display: block;
+    }
+
+    .two_columns_page_main_content .promobox_full_width_title.big-thumb.course-finder {
+        margin-top: 87px;
+    }
+
+    hr.hr_type_1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .featured_links_section .span3 {
+        border-top: 1px solid #E7E7E7;
+        padding-top: 25px;
+        margin-top: 15px;
+    }
+
+    .featured_links_section .span3:first-child {
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .mobile_pointer_down {
+        border-left: 16px solid rgba(0, 0, 0, 0);
+        border-right: 16px solid rgba(0, 0, 0, 0);
+        border-top: 11px solid rgba(0, 0, 0, 0.5);
+        height: 0;
+        width: 0;
+    }
+
+    .ev-list .date {
+        background-image: url(http://www.lsbu.ac.uk/__data/assets/image/0008/23777/cloud2.png?v=0.0.3);
+    }
+
+    .slider_image_title_mobile, .home_banner_image_title_mobile_description {
+        font-family: "Gilroy-SemiBold";
+        font-weight: 300;
+        line-height: 1.34;
+        color: #019BDB;
+        padding: 15px 5px 5px 5px;
+    }
+
+    .home_banner_image_title_mobile_description {
+        padding-top: 0;
+    }
+    .home_page .banner-text-container span {
+      font-family: "Gilroy-SemiBold";
+      line-height: 10px;
+      padding: 15px 0;
+      font-size: 1.5em;
+      line-height: 30px;
+    }
+
+    .row.featured-landing.bus-schools:after {
+        border-bottom:0px none;
+    }
+
+    .row.featured-landing.bus-schools{
+        padding-bottom:0px;
+        margin-bottom:0px;
+    }
+    .home_page #main_content_main_column > .row {
+        padding-bottom: 10px;
+    }
+
+    #faculties-and-departments .row-fluid.school-row{
+        border-bottom:0px;
+    }
+    
+    /* 4.2.20 - General Tables override for mobile*/
+    
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    table {
+        border:none;
+        width: 100% !important;
+    }
+    table > caption {
+        display: block;
+    }
+
+    tr { border: 1px solid #dfdfdf; }
+    
+    td { 
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        word-wrap: break-word;
+    }
+    td:first-child {    
+        font-weight:bold;
+    }
+    
+    td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+    
+/*4.2.21 - Cookies pop up------------*/
+    #cookieWrapper {
+        width: 100%;
+        z-index: 97;
+    }
+    #cookieNotice {
+        padding: 10px;
+        width: auto;
+        z-index: 97;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    #cookieNotice p {
+        width: 100%;
+        font-size: 0.77em;
+        padding: 0;
+        overflow: hidden;
+        z-index: 97;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: inline-block;
+    }
+    /*4.2.22 - Top navigation pseudo arrow on burger menu*/
+    .mob_pointer_type1.active.fa.fa-sort-asc.orange:before {
+        position: absolute;
+        top: -18px;
+        text-align: right;
+        right: -15px;
+        font-size: 30px;
+        color: #ff9933;
+    }
+    .mob_pointer_type1.fa.fa-sort-asc.black:before {
+        color:#333;
+        position: absolute;
+        top: -18px;
+        text-align: right;
+        right: -15px;
+        font-size: 30px;
+    }
+}
+
