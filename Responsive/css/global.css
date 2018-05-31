@@ -5804,17 +5804,16 @@ form.span7.search-space {
 .top_level_landing #main_content_main_column .row .short-info {
     min-height: auto;
 }
-
+.top_level_landing .row.featured-landing .span3:first-child,
+#international .featured_links_section .span3:first-child,
 .department_landing_page_promoted_links .span3:first-child {
     margin-left: 0;
 }
+#international .featured_links_section .span3,
 .department_landing_page_promoted_links .span3,
 .top_level_landing .row.featured-landing .span3 {
     width: 31.2%;
     margin-left: 3%;
-}
-.top_level_landing .row.featured-landing .span3:first-child {
-    margin-left: 0;
 }
 .top_level_landing .featured-landing.use_max_width img {
     max-width: 100%;
