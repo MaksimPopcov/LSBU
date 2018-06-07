@@ -820,11 +820,9 @@ h2, .h2 {
   font-size: 1.5em;
   line-height: 1.2;
   position: relative;
-  width: 585px;
-  margin-top: 0;
+  width: 100%;
   margin-top: -5px;
   margin-bottom: 25px;
-  margin-left: -12px;
   padding: 0;
 }
 
@@ -1049,7 +1047,6 @@ tr.table-odd td {
 
 /* end popup settings */
 .media-body {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 1em;
   font-weight: 600;
@@ -1077,16 +1074,21 @@ tr.table-odd td {
 }
 
 #top_links {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 0.6em;
   font-weight: 600;
-  /*1.125em;*/
   font-weight: normal;
   line-height: 1.1;
   display: inline;
   float: right;
   margin:0;
+  width:100%;  
+}
+
+#top_links .span12 {
+    margin-left: 0;
+    right: 0;
+    width: 100%;
 }
 
 #top_links_list {
@@ -1196,7 +1198,7 @@ input#top_search_input:focus {
 .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
   width: 320px;
   margin-top: -2px;
-  border: 2px solid #dadada;
+  border-radius: 10px 10px 0 0;
 }
 
 #top_search_input_wrapper {
@@ -1566,6 +1568,7 @@ div#main_content_main_column > .row {
 .home_page #main_content_holder {
   background-color: inherit;
   border-bottom: 0;
+  width: auto;
 }
 
 #main_content_holder iframe {
@@ -1579,9 +1582,11 @@ div#main_content_main_column > .row {
 #page_title.people_inner_page {
   margin-bottom: 3px;
 }
+#inner_tab_Publications.active .pull-right {
+
+}
 
 .info_cloud_yellow_circle {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 4.5em;
   font-weight: 600;
@@ -1673,7 +1678,8 @@ filter:alpha(opacity=85);*/
 }
 
 /*Course Finder*/
-.course_finder h1 {
+.course_finder h1,
+.people_finder #main_content_left_column_PL {
     margin-left: 0;
 }
 .course_finder .two_columns_page_main_content {
@@ -1819,15 +1825,16 @@ ul.menu_level_4 > li {
   background: #ff9933;
 }
 
-/*#course_information_page_lhs_tabs > li.active:first-child a,
-#course_information_page_lhs_tabs > li.active:first-child:hover a,
-#course_information_page_lhs_tabs > li:first-child a,
-#course_information_page_lhs_tabs > li:first-child a:hover,
-#course_information_page_lhs_tabs > li:first-child:hover a {
-  font-size: 1.4em;
-  color: #000000;
-  background: #ff9933;
-}*/
+/*Whats on page*/
+.whats_on_page #main_content_main_column .main_content_inner_left_column {
+    width: 21%;
+    margin: 0;
+}
+
+.whats_on_page #main_content_main_column .row .span9.alpha {
+     width: 72%;
+     margin-left:2.5%;
+}
 
 #course_information_page_lhs_tabs > li.active a, 
 #course_information_page_lhs_tabs > li.active a:hover {
@@ -1957,7 +1964,6 @@ ul.menu_level_4 > li {
 }
 
 #main_content_right_column .upcoming_events .header small {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 0.43em;
   font-weight: 400;
@@ -3297,7 +3303,6 @@ img.twitter_thumb {
 }
 
 .accordion-heading .accordion-toggle {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 400;
   /*height: 18px;*/
@@ -3341,7 +3346,6 @@ img.twitter_thumb {
 }
 
 .standard_tabs_nav > li a {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 0.93em;
   font-weight: 600;
@@ -3378,7 +3382,6 @@ img.twitter_thumb {
 
 .standard_tabs_nav > li.active:hover a,
 .standard_tabs_nav > li:hover a {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 0.93em;
   font-weight: 600;
@@ -3411,7 +3414,6 @@ img.twitter_thumb {
 
 .standard_tabs_nav > li.active a,
 .standard_tabs_nav > li.active a:focus {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 0.930em;
   font-weight: 600;
@@ -3421,7 +3423,6 @@ img.twitter_thumb {
   padding: 13px 12px;
   text-align: center;
   text-decoration: none;
-  color: #231f20;
   color: #231f20;
   border: 0;
   border-width: 0;
@@ -3434,7 +3435,6 @@ img.twitter_thumb {
   z-index: 2;
   display: block;
   height: 42px;
-  text-shadow: 0 1px 1px #ccc;
 }
 
 .standard_tabs_nav > li.active span {
@@ -3492,7 +3492,6 @@ img.twitter_thumb {
 }
 
 #case_studies_slides > li .lead p {
-  /*font-family: 'thesansosflight';*/
   font-family: "Gilroy-Regular";
   font-size: 0.9em;
   font-weight: 700;
@@ -3603,7 +3602,6 @@ ul.case_studies_slider_nav_list li {
 #course_info_page_case_studies_list > li p,
 #course_info_page_case_studies_list_overview > li p,
 #course_info_page_facilities_list > li p {
-  /*font-family: 'thesansosflight';*/
   font-family: "Gilroy-Regular";
   font-weight: 300;
   margin-bottom: 10px;
@@ -3620,7 +3618,6 @@ ul.case_studies_slider_nav_list li {
 }
 
 #course_info_page_student_work .thumbnails .header {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   padding: 15px;
@@ -3656,7 +3653,6 @@ ul.case_studies_slider_nav_list li {
 }
 
 .course_year_tab_list {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   list-style: none;
@@ -3742,7 +3738,6 @@ ul.case_studies_slider_nav_list li {
 }
 
 .fees_filter_header {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 1.5em;
   font-weight: 600;
@@ -3783,7 +3778,6 @@ ul.case_studies_slider_nav_list li {
 }
 
 .unique_fees_filters ul > li {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   display: inline-block;
@@ -3798,7 +3792,6 @@ ul.case_studies_slider_nav_list li {
 }
 
 #fees_list .accordion-inner {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-weight: 400;
   padding-left: 50px;
@@ -4051,7 +4044,6 @@ ul.related_links_rhs > li {
 .embeded_video,
 .embeded_video p,
 .embeded_video span {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-size: 1.125em;
   font-weight: 600;
@@ -4071,11 +4063,9 @@ blockquote {
 .left-side-blockquote p,
 .right-side-blockquote p,
 blockquote p {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 1.375em;
   font-weight: 600;
-  /*font-weight: normal;*/
   line-height: 1.25;
   margin-bottom: 0;
   padding-right: 27px;
@@ -4092,18 +4082,15 @@ blockquote p {
 .right-side-blockquote p:last-child,
 blockquote p.last-child,
 blockquote p:last-child {
-  /*font-family: 'thesansosflight';*/
   font-family: "Gilroy-Regular";
   font-size: 1em;
   font-weight: 300;
-  /*font-weight: normal;*/
   text-align: right;
 }
 
 .left-side-blockquote p:first-child,
 .right-side-blockquote p:first-child,
 blockquote p:first-child {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 1.375em;
   font-weight: 600;
@@ -4159,14 +4146,12 @@ small.pull-right {
 }
 
 small.pull-right strong {
-  /*font-family:'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-size: 16px;
   font-weight: 600;
 }
 
 small.pull-right cite {
-  /*font-family:'thesansosflight';*/
   font-family: "Gilroy-Regular";
   font-size: 16px;
   font-weight: 300;
@@ -4201,6 +4186,11 @@ blockquote.pull-right p:last-child {
 blockquote.pull-left p:first-child,
 blockquote.pull-right p:first-child {
   font-size: 1em;
+}
+
+.media > .pull-left {
+    margin-right: 10px;
+    width: 40%;
 }
 
 #top_of_page_link {
@@ -4258,6 +4248,10 @@ blockquote.pull-right p:first-child {
   display: none;
   overflow: hidden;
   width: 0;
+}
+
+.span12 {
+    width: 100%;
 }
 
 .offset_57px {
@@ -4351,6 +4345,7 @@ Move to separate stylesheet if invalid CSS is a problem.
   white-space: nowrap;
   text-indent: -9999px;
   border: 0 none;
+  float:left;
   background: url("http://www.lsbu.ac.uk/__data/assets/image/0019/766/search_courses_bg.png?v=0.1.4") no-repeat;
 }
 
@@ -4360,10 +4355,17 @@ Move to separate stylesheet if invalid CSS is a problem.
 
 .listing_page_main_search_form_holder .description {
   line-height: 1.2;
-  width: 270px;
   padding-top: 7px;
   text-align: left;
   margin-left: 0;
+}
+
+.listing_page_main_search_form_holder .span label.description {
+    width: 34%;
+}
+
+.listing_page_main_search_form_holder form .span {
+    width: 97%;
 }
 
 .listing_page_main_search_form_holder .description p {
@@ -4377,7 +4379,7 @@ Move to separate stylesheet if invalid CSS is a problem.
   font-family: "Gilroy-Regular";
   font-size: 1.125em;
   font-weight: normal;
-  width: 332px;
+  width: 50%;
   height: 41px;
   margin-bottom: 0;
   padding-right: 10px;
@@ -4519,7 +4521,6 @@ Move to separate stylesheet if invalid CSS is a problem.
 }
 
 .personal_info_list {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   display: inline;
@@ -4539,7 +4540,6 @@ Move to separate stylesheet if invalid CSS is a problem.
 }
 
 .personal_info_list .left_column {
-  /*color: #737373;*/
   font-weight: 400;
   width: 33%;
   margin-bottom: 3px;
@@ -4553,11 +4553,6 @@ Move to separate stylesheet if invalid CSS is a problem.
   margin-left: 0;
 }
 
-img.people_inner_photo {
-  /*position: relative;*/
-  /*top: 6px;*/
-}
-
 .publications_item {
   margin-left: 0;
   list-style: none;
@@ -4567,17 +4562,11 @@ img.people_inner_photo {
   padding: 3px 0;
 }
 
-/*
-.publications_item li:nth-child(even) {
-  background: #f7f7f7;
-}
-*/
 /* end people inner page */
 /* campus map */
 #campus_map_tab_nav_holder {
   position: relative;
   margin-bottom: -66px;
-  /*margin-right: 17px;*/
 }
 
 #campus_map_tab_nav {
@@ -4613,7 +4602,6 @@ img.people_inner_photo {
 .info_window {
   overflow: hidden;
   width: 440px;
-  /*425px;*/
   height: auto;
   padding-bottom: 10px;
 }
@@ -4667,13 +4655,14 @@ div.map-popup {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #e7e7e7;
+  width: 100%;
 }
 
 #news_listing > li > a.pull-left img,
 .news_listing > li > a.pull-left img,
 #people_listing > li > a.pull-left img,
 .virtual-listing > li > a.pull-left img {
-  max-width: 203px;
+  max-width: 100%;
   margin-right: 5px;
 }
 
@@ -4683,12 +4672,12 @@ div.map-popup {
 
 #news_listing > li.most_recent > a.pull-left img,
 .news_listing > li.most_recent > a.pull-left img {
-  max-width: 282px;
+  max-width: 100%;
 }
 
 #news_listing > li.position_1 > a.pull-left img,
 .news_listing > li.position_1 > a.pull-left img{
-  max-width: 282px;
+  max-width: 100%;
   margin-right: 5px;
 }
 
@@ -4711,12 +4700,14 @@ div.map-popup {
   font-weight: 300;
   line-height: 1.5;
   color: #231f20;
+  width: 56%;
+  margin: 0;
+  padding: 0;
 }
 
 #news_listing .media-body p,
 .news_listing .media-body p,
 #people_listing .media-body p {
-  /*color:$midgrey;*/
   font-size: 0.9em;
   margin-bottom: 3px;
 }
@@ -4955,13 +4946,13 @@ button.btn, input[type="submit"].btn:hover {
   color: #1a6f68;
 }
 
-#people_listing > li > a.pull-left img {
-  max-width: 114px;
-  margin-right: 5px;
+#people_listing .media > .pull-left {
+    width: 20%;
 }
 
-.person_info {
-  /*margin-bottom: 20px;*/
+#people_listing > li > a.pull-left img {
+  max-width: 100%;
+  margin-right: 5px;
 }
 
 #people_listing .left_column {
@@ -4988,7 +4979,6 @@ button.btn, input[type="submit"].btn:hover {
 }
 
 .tick_tip {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 400;
   line-height: 1.2;
@@ -5074,7 +5064,6 @@ button.btn, input[type="submit"].btn:hover {
 #courses_listing .accordion-body .header,
 #fees_list .accordion-body .header,
 #publications_list .accordion-body .header {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
 }
@@ -5084,7 +5073,6 @@ button.btn, input[type="submit"].btn:hover {
 .publications_list .accordion-group {
   padding-top: 10px;
   padding-bottom: 10px;
-  /*border-bottom: 1px solid #e7e7e7;*/
 }
 
 #courses_listing .accordion-group:first-child,
@@ -5128,7 +5116,6 @@ button.btn, input[type="submit"].btn:hover {
 #courses_listing .accordion-body .header,
 #fees_list .accordion-body .header,
 .publications_list .accordion-body .header {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
 }
@@ -5139,7 +5126,6 @@ button.btn, input[type="submit"].btn:hover {
 }
 
 table.course_compare_table {
-  /*font-family: 'thesansosflight';*/
   font-family: "Gilroy-Regular";
   font-weight: 300;
   margin-bottom: 20px;
@@ -5154,8 +5140,6 @@ table.course_compare_table td {
 }
 
 table.course_compare_table th {
-  /*font-family: 'thesansosfbold';
-font-weight: normal;*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   border-top: 1px solid #dfdfdf;
@@ -5175,7 +5159,6 @@ table.course_compare_table th:first-child {
 }
 
 table.course_compare_table tr td:first-child {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   border-bottom: 1px solid #FFF;
@@ -5191,8 +5174,6 @@ table.course_compare_table tr.last td:first-child {
 }
 
 table.course_compare_table a {
-  /*font-family: 'thesansosfbold';
-font-weight: normal;*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
 }
@@ -5202,7 +5183,6 @@ font-weight: normal;*/
 }
 
 .blue_gradient_h50 {
-  /*font-family: 'thesansosfbold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   line-height: 1.2;
@@ -5222,7 +5202,6 @@ font-weight: normal;*/
 /* end course finder, course listing page */
 /* news */
 .date_bar_full_width {
-  /*font-family: 'thesansosfsemibold';*/
   font-family: "Gilroy-Regular";
   font-weight: 600;
   /*left: -15px;*/
@@ -5244,14 +5223,19 @@ ul.ui-autocomplete {
   padding: 0;
   list-style-type: none;
   text-align: left;
-  border: solid 1px #dadada;
   background: white;
 }
 
 ul.ui-autocomplete h2 {
-  font-size: small;
+  font-size: 1.2em;
   padding: 5px;
-  background-color: #efefef;
+  background-color: #25a196;
+  color: #fff;
+}
+
+ul.ui-autocomplete h2 a strong {
+    color: #fff !important;
+    font-size: 0.9em;
 }
 
 ul.ui-autocomplete li.ui-menu-item {
@@ -5268,7 +5252,7 @@ ul.ui-autocomplete li.ui-menu-item a {
 }
 
 ul.ui-autocomplete li.ui-menu-item a strong {
-  color: #DD027A;
+  color: #25a196;
 }
 
 ul.ui-autocomplete li.ui-menu-item a.description,
@@ -5367,9 +5351,16 @@ dd {
 /* department pages scrollboxes */
 .department-scrollbox {
   float: left;
-  width: 357px;
+  width: 48%;
   min-height: 1px;
-  margin-left: 30px;
+  margin-left: 0;
+}
+
+.department-scrollboxes-row {
+    width: 100%;
+}
+.department-scrollbox:first-child {
+    margin-right: 2.5%;
 }
 
 .department-scrollbox .scrollbox {
@@ -5443,6 +5434,74 @@ dd {
   border: none;
   background: #FFF;
   background: transparent;
+}
+/*Ipad hack for burger menu*/
+.ipad_resp .tab-content {
+  overflow: visible;
+}
+
+.ipad_resp .tabs-left .nav-tabs {
+  width: 100%;
+  opacity: 1;
+}
+.ipad_resp #page_title {
+    margin-bottom: -10px;
+}
+.ipad_resp #main_content_holder .tabs-left.close {
+    overflow: visible;
+    display: none;
+}
+.ipad_resp #course_information_page_lhs_tabs {
+  width: 100%;
+}
+.ipad_resp #course_information_page_lhs_tabs > li.active:first-child a,
+.ipad_resp #course_information_page_lhs_tabs > li.active:first-child:hover a,
+.ipad_resp #course_information_page_lhs_tabs > li:first-child a,
+.ipad_resp #course_information_page_lhs_tabs > li:first-child a:hover,
+.ipad_resp #course_information_page_lhs_tabs > li:first-child:hover a {
+  border: 0;
+  border-radius: 0;
+}
+.ipad_resp .tabs-left > .nav-tabs > li > a:hover,
+.ipad_resp .tabs-left > .nav-tabs > li > a:focus {
+  background:#ff9933;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 9px 15px;
+}
+.ipad_resp .tabs-left a {
+  font-weight: 400;
+  display: block;
+  padding: 9px 15px;
+  color: #737373;
+  border: 0;
+}
+.ipad_resp .tabs-left a:hover {
+  color: #000000;
+  background-color: #ff9933;
+  border: 0;
+  border-radius: 0;
+}
+.ipad_resp .mob_main_left_nav {
+  width: 100%;
+  display: block;
+  position: relative;
+  float:left;
+  background: #fff;
+}
+.ipad_resp .mob_main_left_nav_btn.fa.fa-bars {
+  font-size: 40px;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  width: 60px;
+  line-height: 30px;
+  border-radius: 0;
+  height: auto;
+}
+.ipad_resp #main_content_main_column {
+    position: relative;
 }
 
 .main_content_inner_left_column {
@@ -5792,23 +5851,26 @@ form.span7.search-space {
 .top_level_landing #main_content_left_column nav {
     min-width: 100%;
 }
+#main_content_main_column .span9,
 #main_content_main_column .row .span9,
 .top_level_landing #main_content_main_column .row .span9 {
     width: 100%;
     margin-left: 0;
     background-repeat: no-repeat;
     background-size: 100% !important;
-    min-height: 280px;
+   /* min-height: 280px;*/
 }
 
 .top_level_landing #main_content_main_column .row .short-info {
     min-height: auto;
 }
+.featured-landing .span3:first-child,
 .top_level_landing .row.featured-landing .span3:first-child,
 #international .featured_links_section .span3:first-child,
 .department_landing_page_promoted_links .span3:first-child {
     margin-left: 0;
 }
+.featured-landing .span3,
 #international .featured_links_section .span3,
 .department_landing_page_promoted_links .span3,
 .top_level_landing .row.featured-landing .span3 {
@@ -6285,19 +6347,7 @@ img.mfp-img {
     padding-left: 6px;
   }
 }
-@media only screen and (min-width: 767px) {
-  .row.featured-landing.bus-schools:after {
-    position: relative;
-    top: 25px;
-    bottom: 0;
-    left: 0;
-    width: 746px;
-    height: 1px;
-    margin-left: 30px;
-    content: '';
-    border-bottom: 1px solid #eee;
-  }
-}
+
 .featured-landing.bus-schools .image-container.promoted-listing.hide_desktop.show_mobile {
   overflow: hidden;
   width: 100%;
@@ -6568,7 +6618,6 @@ margin-left: 45px;*/
 }
 
 #footer_copyrights_note {
-  /*font-family: 'thesansosfbold';*/
   font-family: 'Gilroy-Regular';
   font-size: 0.875em;
   font-weight: 600;
@@ -6848,8 +6897,8 @@ iframe {
 }
 
 .featured-landing.bus-schools .image-container.promoted-listing {
-  height: 92px;
-  width: 230px;
+  height: auto;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -6867,8 +6916,6 @@ iframe {
   }
 }
 
-
-
 @media only screen and (min-width: 767px) {
 
   .row.featured-landing.bus-schools:after {
@@ -6877,9 +6924,9 @@ iframe {
     left: 0;
     top: 25px;
     bottom: 0;
-    margin-left: 30px;
+    margin-left:0;
     height: 1px;
-    width: 746px;
+    width: 100%;
     border-bottom: 1px solid #eeeeee;
   }
 }
@@ -7052,8 +7099,10 @@ iframe {
   }
 
   #courses_listing .accordion-body, #courses_listing .accordion-heading, #fees_list .accordion-body, #fees_list .accordion-heading, .publications_list .accordion-body, .publications_list .accordion-heading {
-
       height: auto !important;
+  }
+  .campaign_landing_page .clp .accordion {
+      float: left;
   }
 
   #player, #course_info_page_case_studies_list_overview, #tab_case_studies, iframe, #tab_staff {
@@ -7238,6 +7287,16 @@ header, nav, #footer_frame .container, #breadcrumbs {
 }
 [class*="span"] {
     margin-left: 2.5%;
+}
+.row-fluid .span9 {
+    width: 70% !important;
+}
+.span9.event-page {
+    width: 70%;
+}
+
+.row-fluid [class*="span"] {
+    margin-left: 2.9940119760479043% !important;
 }
 
 .home_page #featured_sections_frame {
@@ -7642,7 +7701,17 @@ header, nav, #footer_frame .container, #breadcrumbs {
 /*Opend days page*/
     .campaign_landing_page #campaign .button_link_blue {
         width: 88.9%;
-    } 
+    }
+/*People finder*/ 
+    .listing_page_main_search_form_holder input[type='submit'] {
+        margin-left: 0;
+    }
+    .find-event label {
+        font-size: 1.8em;
+    }
+    #course_info_page_case_studies_list .media-body, #course_info_page_case_studies_list_overview .media-body, #news_listing .media-body, .news_listing .media-body, #people_listing .media-body {
+      width: 70%;
+    }
 }
 
 /*Big resolution media querys*/
@@ -7865,4 +7934,78 @@ header, nav, #footer_frame .container, #breadcrumbs {
     color: #25a196;
     border: 2px solid #25a196;
     cursor: pointer;
+}
+
+
+/*Animated underline*/
+.nav-header > a,
+#breadcrumbs .span12 > a,
+#breadcrumbs span > a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-header > a:before,
+#breadcrumbs .span12 > a:before,
+#breadcrumbs span > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #293dd4;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-header > a:before {
+  background-color: #ffffff;
+  height: 2px;
+}
+
+li.nav-header > a:hover {
+  text-decoration: none !important;
+}
+
+.nav-header ul li a {
+  text-decoration: underline;
+}
+
+.nav-header > a:hover:before,
+#breadcrumbs .span12 > a:hover:before,
+#breadcrumbs span > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*DANIELS OVERRIDES*/
+
+/* Events */
+
+/*831*/
+.whats_on_page .ev-list .recommended .bar-mini {
+    margin-bottom: 15px;
+    padding: 12px 15px 12px 70px;
+    width: 100%;
+    overflow: hidden;
+    max-width: 83%;   
+}
+/*740*/
+.whats_on_page .ev-list {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+/*1299*/
+#department .big-thumb {
+    margin-bottom: 20px;
+    margin-left: 0px;
 }
