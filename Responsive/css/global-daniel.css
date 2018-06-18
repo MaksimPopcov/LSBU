@@ -1,0 +1,1590 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 07 June 2018 08:58:17
+*/
+
+
+/* ####### Daniel Wojciechowski - Squiz PL - dwojciechowski@squiz.pl */
+
+/* To join before sign off */
+
+
+
+/* overall */
+
+.hide{
+  display: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.pad-ver-20{
+  padding: 20px 0;
+}
+
+.right15{
+  margin-right: 15px;
+}
+
+.left30{
+  padding-left: 30px;
+}
+
+.spacer30{
+  height: 30px;
+  clear: both;
+}
+
+.padding15lr #faculties-and-departments,
+.padding15lr #social_media_share_page{
+  padding: 0 15px;
+  width: auto;
+}
+
+.cell-middle{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.heading{
+  
+  font-size: 1.63em;
+  color: #929292;
+  padding: 30px 0;
+}
+
+/* mini-calendar */
+
+#calendarTable table {
+  width: 207px !important;
+  border: none;
+  border-bottom: 2px solid #e7e7e7;
+}
+#calendarTable th {
+  border: none;
+  padding: 0;
+}
+#calendarTable td {
+  border: none;
+  padding: 0;
+}
+
+
+
+.mini-calendar span.mini-calendar-header{
+  background: #E7E7E7;
+  color: #231F20;
+  font-size: 1.2em;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+  text-align: center;
+}
+
+.mini-calendar b{
+  margin: 0 0 3px 0;
+  font-weight: 600;
+}
+
+.mini-calendar span.mini-calendar-header-prev {
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+
+.mini-calendar span.mini-calendar-header-prev a{
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0005/5882/black_arrows.png?v=0.0.2");
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  margin: 0;
+  width: 13px;
+  height: 22px;
+  text-indent: -9999px;
+  padding: 0 10px;
+}
+
+.mini-calendar span.mini-calendar-header-next {
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+
+.mini-calendar span.mini-calendar-header-next a{
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0005/5882/black_arrows.png?v=0.0.2");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: inline-block;
+  margin: 0;
+  width: 13px;
+  height: 22px;
+  text-indent: -9999px;
+  padding: 0 10px;
+}
+
+.mini-calendar td.date{
+  padding:0!important;
+  margin: 0!important;
+  text-align: center;
+}
+
+.mini-calendar th.dayLabelWeekend,
+.mini-calendar th.dayLabel{
+  padding: 3px!important;
+  margin: 0!important;
+  background: #FFDA0C;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.mini-calendar td.date a{
+  cursor: text;
+  color: #000;
+}
+
+.mini-calendar td.date a:hover{
+  text-decoration: none;
+}
+
+.mini-calendar .eventDate a{
+  color: #0088CC!important;
+  cursor: pointer!important;
+  font-weight: 400;
+}
+
+
+/* Event Page */
+
+.event-page img{
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+/*.event-page strong{
+  margin: 0 0 15px 0;
+  font-size: 1.4em;
+  color: #DD027A;
+  
+  display: block;
+  font-weight: normal;
+}*/
+
+.event-page .lead{
+  
+  /* color: #dd027a; */
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+.event-page #social_media_share_page,
+.two-columns #social_media_share_page{
+  /*padding-left: 30px;*/
+  /*width: auto;*/
+}
+
+table.info{
+  width: 100%;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 30px;
+}
+
+table.info td{
+  background: transparent!important;
+  padding: 5px 0;
+  border-right: none;
+  text-align: left;
+  color: #231f20;
+}
+
+table.info p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+table.info p:first-child {
+  margin-top: 0;
+}
+
+table.info th{
+  background: transparent!important;
+  padding: 5px 0;
+  width: 200px;
+  border-right: none;
+  text-align: left;
+  color: #737373;
+}
+
+.got_question,
+.register_now_up,
+.register_now{
+    font-family: "Gilroy-Regular";
+    font-weight: 600;
+    line-height: 2.2;
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0 0 40px 0;
+    cursor: pointer;
+    text-align: center;
+    color: #FFF;
+    background: #25a196;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+    -moz-transition: box-shadow .4s;
+    -o-transition: box-shadow .4s;
+    -webkit-transition: box-shadow .4s;
+    transition: box-shadow .4s; 
+}
+
+/* Form elegance */
+
+.form-elegance input[type=text]{
+  padding: 10px;
+  border: 2px solid #e7e7e7;
+  border-radius: 0;
+}
+
+.form-elegance .hidder{
+  overflow: hidden;
+  padding: 7px;
+  border: 2px solid #e7e7e7;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0006/5838/arrow_down_form_elegance.png?v=0.0.2");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.form-elegance select{
+  width: 130%;
+  border: 0px;
+  background: transparent;
+  height: auto;
+  margin:0;
+  padding:0;
+  color: #555555;
+}
+
+/* form standard */
+
+.form-standard {
+    font-weight: 300;
+}
+
+.form-standard label{
+  float: left;
+  width: 180px;
+  padding: 0px 20px 0 0;
+  text-align: right;
+  margin: 0;
+  font-weight: bold;
+}
+
+.form-standard input[type=text]{
+  float: left;
+  border-radius: 0;
+  border: 2px solid #dadada;
+  height: 25px;
+  padding: 4px;
+  width: 302px;
+  background-color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.form-standard textarea, .form-standard textarea.error{
+  float: left;
+  border-radius: 0;
+  border: 2px solid #dadada;
+  height: 150px;
+  padding: 4px;
+  width: 302px;
+  background-color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.form-standard select{
+  border: 0;
+  background-color: transparent;
+  width: 130%;
+  margin: 0;
+  padding: 0 0 0 5px;
+  -webkit-appearance:none;
+}
+
+.form-standard .cover{
+  float: left;
+  border-radius: 0;
+  border: 2px solid #dadada;
+  height: 25px;
+  padding: 4px;
+  overflow: hidden;
+  width: 302px;
+  margin: 0 0 10px 0;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0018/7902/arrow_down_15.png?v=0.0.2");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.form-standard .grouper-radio,
+.form-standard .grouper-checkbox{
+  width: 302px;
+  float: left;
+  padding: 4px 12px 4px 0;
+}
+
+.form-standard .grouper-radio input[type=radio],
+.form-standard .grouper-checkbox input[type=checkbox]{
+  display: none;
+}
+
+.form-standard .grouper-radio label{
+  width: 10px;
+  float: none;
+  background-repeat: no-repeat;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0014/8132/radio_button.png?v=0.0.3");
+  text-align: left;
+  padding: 0 0 10px 25px;
+  font-weight: normal;
+}
+
+.form-standard .grouper-checkbox label{
+  width: 10px;
+  float: none;
+  background-repeat: no-repeat;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0004/5881/filter_tick.png?v=0.0.5");
+  text-align: left;
+  padding: 0 0 10px 25px;
+  font-weight: normal;
+}
+
+.grouper-checkbox .checked{ background-position: left -79px; }
+.grouper-radio .checked{ background-position: left 2px; }
+
+.grouper-checkbox .unchecked{ background-position: left top; }
+.grouper-radio .unchecked{ background-position: left -31px; }
+
+.form-standard .error{
+  float: left;
+  position: relative;
+  background-color: #f5d0d0;
+  margin: 0 0 10px 26px;
+  color: #880022;
+  font-family: "open sans";
+  font-weight: 400;
+  padding: 10px;
+  min-height: 25px;
+  width: 184px;
+  text-align: left;
+}
+
+.no_style_list li {
+  list-style-type: none;
+}
+
+.form-campaign .error{
+  float: left;
+  position: relative;
+  background-color: #f5d0d0;
+  margin: 10px 2px 10px 10px;
+  color: #880022;
+  font-family: "open sans";
+  font-weight: 400;
+  padding: 10px;
+  min-height: 25px;
+  width: 90%;
+  text-align: left;
+}
+
+.form-standard .error-thick{
+  position: absolute;
+  border-right: 18px solid #f5d0d0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  left:-18px;
+  top:0;
+}
+
+.form-campaign .error-thick{
+  position: absolute;
+  border-right: 18px solid transparent;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid #f5d0d0;
+  border-left: 18px solid transparent;
+  top:-30px;
+  left:0;
+}
+
+/*.form-standard .error-large{
+  float: left;
+  position: relative;
+  background-color: #f5d0d0;
+  margin: 0px;
+  color: #880022;
+  font-family: "thesansosfsemibold";
+  padding: 6px;
+  min-height: 25px;
+  width: 100%;
+}*/
+
+.form-standard .error-large ul{
+  float: left;
+  position: relative;
+  background-color: #f5d0d0;
+  margin: 0px;
+  color: #880022;
+  font-family: "thesansosfsemibold";
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-standard .error-large li{
+  margin-left: 40px;
+}
+
+.form-standard .captcha img{
+  width: 170px;
+  height: 50px;
+  border: 2px solid #dedede;
+  float: left;
+  margin: 0 0 10px 0;
+}
+
+.form-standard .captcha div{
+  padding: 0 0 0 10px;
+  float: left;
+}
+
+.form-standard .captcha a{
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.form-standard .submit{
+  width: 515px;
+  text-align: right;
+}
+
+.form-standard p {
+  font-weight: 300;
+}
+
+#sq_submit_accessible_captcha{
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0006/1887/blue_message_box.png?v=0.0.4");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  width: 165px;
+  height: 31px;
+  color: #FFF;
+  border: 0;
+  border-bottom: 1px solid #d6d6d6;
+  font-family: "open sans";
+  font-weight: 600;
+  clear: both;
+  margin-left: 200px;
+}
+
+#sq_security_key {
+  margin: 0 0 10px 200px;
+  border: 1px solid #d6d6d6;
+  float: left;
+}
+
+#campaign.new-layout #sq_security_key{
+  margin: 0px 0px 10px 0px;
+}
+
+#sq_accessible_validation_link {
+  float: left;
+  margin-left: 16px;
+  width: 50%;
+}
+
+#sq_regen_captcha {
+  float: left;
+  margin-left: 20px;
+  width: 50%;
+}
+
+#sq_submit_accessible_captcha {
+  float: left;
+}
+
+#SQ_SYSTEM_SECURITY_KEY_VALUE {
+  margin-left: 200px;
+}
+
+
+.form-campaign .error-large ul{
+  float: left;
+  position: relative;
+  background-color: #f5d0d0;
+  margin: 0px;
+  color: #880022;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-campaign .error-large li{
+  margin-left: 40px;
+}
+/* Landing Page */
+
+.short-info p{
+  margin: 0;
+  padding: 0;
+}
+
+.big-thumb{
+  background-repeat: no-repeat;
+  background-size: 100% !important;
+  position: relative;
+  height: 300px;
+  width: 96%;
+}
+
+.big-thumb .overlay-table {
+  display: table;
+  height: 100%;
+  float: left;
+  width: 430px;
+  max-width: 430px;
+}
+
+.big-thumb .overlay{
+  background: rgba(255,255,255,0.85);
+  padding: 10px;
+}
+
+.big-thumb .overlay p{
+  margin: 0 0 10px 0;
+}
+
+.big-thumb .overlay p.pink{
+  
+  font-size: 24px;
+}
+
+.big-thumb .overlay h2{
+  color: #dd027a;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+}
+
+.big-thumb .overlay h2 a{
+  color: #dd027a;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+}
+
+
+.big-thumb .play-video{
+  display: table;
+  float: right;
+  height: 100%;
+}
+
+.big-thumb .play-video a, .play-video-mobile a {
+  width: 207px;
+  height: 94px;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0010/4105/play-video.png?v=0.0.5");
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: block;
+  text-indent: -9999px;
+}
+
+.big-thumb .play-video a:hover, .play-video-mobile a:hover {
+  background-position: left -101px;
+}
+
+.featured-landing h3 a{
+    color: #25a196;
+}
+
+/* Event listing Page */
+
+#left_navigation .left_navigation_header > span{
+  background: #E7E7E7;
+  color: #231F20;
+  font-size: 1.4em;
+  display: block;
+  padding: 10px 15px;
+}
+
+#events_filter li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#events_filter ul{
+  margin: 0;
+  padding: 0;
+}
+
+#events_filter .active{
+  background-color: #FFDA0C;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0011/5879/arrow_down.png?v=0.0.2");
+  padding: 10px 40px;
+}
+
+#events_filter a{
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0003/5880/arrow_left.png?v=0.0.5");
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  padding: 10px 30px;
+  display: block;
+  color: #000;
+}
+
+#events_filter a:hover{
+  text-decoration: none;
+}
+
+#events_filter span{
+  display: block;
+  padding: 10px;
+  background-color: #E7E7E7;
+  color: #231F20;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#events_filter .option-list{
+  margin: 0 0 5px 0;
+}
+
+#events_filter .option-list li{
+  border-left: 3px solid #FFDA0C;
+  margin: 3px 0 0 0;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0004/5881/filter_tick.png?v=0.0.5");
+  background-position: right 5px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#events_filter .option-list label{
+  margin: 0;
+  padding: 5px 25px 5px 10px;
+}
+
+#events_filter .option-list .checked{
+  background-position: right -74px;
+}
+
+#events_filter .option-list input[type=checkbox]{
+  display: none;
+}
+
+.find-event fieldset{
+  border: 1px solid #e7e7e7;
+  margin: 0 0 40px 0;
+  padding: 35px 20px;
+}
+
+.find-event .hidder{
+  width: 180px;
+  float: left;
+  margin: 2px 10px 0 0;
+}
+
+.find-event label{
+  font-size: 2em;
+  float: left;
+  padding: 15px 10px 0 0;
+}
+
+.find-event input[type=text]{
+  margin: 0px 5px 0 0;
+  float: left;
+  color: #868686;
+  border: 2px solid #dadada;
+  font-size: 1.125em;
+  line-height: 2;
+  height: 35px;
+  padding: 4px 10px;
+}
+
+#find-event-select {
+  z-index: 1000;
+  width: 194px;
+}
+
+.search-icon {
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0007/5839/search-icon.png?v=0.0.3");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: transparent;
+  display: block;
+  width: 47px!important;
+  height: 47px!important;
+  border: 0;
+}
+.search-icon:hover {
+    background-position: bottom center;
+}
+
+.ev-list{
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+}
+
+.ev-list .short{
+  color: #737373;
+}
+
+.ev-list .date{
+  position: absolute;
+  background-image: url(http://www.lsbu.ac.uk/__data/assets/image/0012/4440/cloud.png?v=0.0.3);
+  background-repeat: no-repeat;
+  padding: 37px 17px 0 6px;
+  width: 83px;
+  height: 70px;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ev-list .bar{
+  background-color: #ededed;
+  padding: 12px 0 12px 70px;
+  margin: 0 0 0 40px;
+  font-weight: 600;
+}
+
+.ev-list .bar-mini{
+  background-color: #ededed;
+  padding: 12px 0 12px 70px;
+  margin: 0 0 0 40px;
+  font-weight: 600;
+  width: 100px;
+  float: left;
+}
+
+.ev-list .events-item{ padding: 0 0 0 230px; }
+.recommended .ev-list .events-item{ padding: 0 0 0 110px; }
+
+.ev-list .events-item-time-location {
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.ev-list .events-item-time-location span {
+  font-weight: 300;
+  margin-right: 20px;
+}
+.ev-list .events-item-time-location span a {
+    color: #293dd4;
+}
+.ev-list li{
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0 0 30px 0;
+  padding: 0 0 10px 0;
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.ev-list li.recommended {
+  background: #fff url(http://www.lsbu.ac.uk/__data/assets/image/0019/19720/event_promoted_bg.png?v=0.0.3) repeat-x left bottom;
+}
+
+.recommended .right{
+  float: right;
+  padding: 0 10px 0 0;
+}
+
+.ev-list .cont {
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0019/4438/ev-grad.png?v=0.0.2");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  border-bottom: 1px solid #FFF;
+}
+
+#main_content_main_column .ev-list h2{
+    font-size: 1.7em;
+    font-family: "Gilroy-SemiBold";
+    font-weight: 300;
+    line-height: 1.3;
+    color: #25a196;
+}
+#main_content_main_column .ev-list h2 a {
+    color: #25a196;
+}
+/* promoted events on events list */
+.ev-list .recommended .bar-mini {
+  margin-bottom: 15px;
+  padding: 12px 15px 12px 70px;
+  width: 619px;
+}
+
+.ev-list .recommended .events-item {
+  padding: 0 0 0 110px;
+}
+
+.ev-list .recommended .events-summary {
+  color: #929292;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+/* site wide search */
+
+
+.site-search fieldset{
+  background-position: 60px 80px;
+}
+
+.site-search input[type=text]{
+  width: 67%;
+  margin-left: 40px;
+}
+.search-list{
+  margin-left:0;
+}
+.search-list li{
+  list-style-type: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 30px 0;
+}
+
+.search-list h3{
+  font-size: 1.5em;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+hr.search-hr1{
+  margin-bottom:10px;
+}
+hr.search-hr2{
+  margin-top:10px;
+}
+
+/* Faculties and departments */
+
+#faculties-and-departments .group{
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+  height: 250px;
+}
+
+#faculties-and-departments hr{
+  margin: 0 0 40px 0;
+}
+
+#faculties-and-departments .description{
+  background-color: rgba(255,255,255,0.9);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#faculties-and-departments h2{
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+#faculties-and-departments h2 a{
+  color: #25a196;
+}
+
+#faculties-and-departments h2.null_left { padding-left:0; }
+
+#faculties-and-departments p{
+  color: #000;
+  font-weight: 400;
+  font-size: 0.938em;
+  padding: 0 15px 15px 15px;
+  margin: 0;
+}
+
+#faculties-and-departments li{
+  list-style-type: none;
+  padding: 15px 0;
+  font-family: "thesansosfsemibold";
+}
+
+#faculties-and-departments ul{
+  margin: 0;
+}
+
+/* International */
+
+/*#international .lead {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 35px 0;
+  display: inline-block;
+  color: #231F20;
+}*/
+
+#international .international_infobox .mobile_pointer_down {
+    border-left: 16px solid rgba(0, 0, 0, 0);
+    border-right: 16px solid rgba(0, 0, 0, 0);
+    border-top: 11px solid rgba(0, 0, 0, 0.6);
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 55px;
+    left: 11px;
+}
+
+#international p{
+  font-family: "open sans";
+}
+
+#international h2{
+  font-size: 1.5em;
+}
+
+#international h3 a{
+color:#25a196;
+}
+
+.list_by_country_holder {
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.international_selected_countries > .span3 > a {
+  display: block;
+  font-size: 1.125em;
+}
+
+#international .letters{
+  margin: 0 0 40px 0;
+}
+
+#international .letters a{
+  background-color: #E7E7E7;
+  display: block;
+  float: left;
+  margin: 0 2px 2px 0;
+  padding: 7px;
+  text-align: center;
+  width: 25px;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.125em;
+  color: #25a196;
+}
+
+#international .letters a:hover{
+  text-decoration: underline;
+}
+
+
+#international .letters a.active {
+  background-color: #BDBDBD;
+}
+
+#international .world-map{
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+#international .world-map area{
+  display: block;
+  outline: none;
+}
+
+.over-continental{
+  background-position: left bottom!important;
+}
+
+#international .world-map div{
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: absolute;
+}
+
+#international .world-map div.active {
+  background-position: left bottom;
+}
+
+#international .world-map img {
+  outline: none;
+}
+
+.n-america{width:257px; height:283px;}
+.s-america{width:99px; height:162px;}
+.europe{width:294px; height:222px;}
+.asia{width:323px; height:298px;}
+.africa{width:141px; height:161px;}
+.australia{width:135px; height:107px;}
+
+#n-america{left: 0; top: 1px;}
+#s-america{left: 182px; top: 271px;}
+#europe{left: 210px; top: 0;}
+#asia{left: 430px; top: 21px;}
+#africa{left: 327px; top: 215px;}
+#australia{left: 600px; top: 300px;}
+
+#international .featured_links_section p {
+  color: #737373;
+}
+
+.international_infobox {
+  height: 55px;
+  line-height: 2.3;
+  background: url(http://www.lsbu.ac.uk/__data/assets/image/0006/16467/international_map_infobox.png?v=0.0.3) no-repeat;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 1.25em;
+  z-index: 9000;
+  display: none;
+  cursor: pointer;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+.international_map_region_holder:hover .international_infobox {
+  display: block;
+}
+*/
+
+#n-america .international_infobox {
+  width: 215px;
+  left: 50%;
+  top: 50%;
+}
+
+#s-america .international_infobox {
+  width: 129px;
+  left: 30%;
+  top: 18%;
+}
+
+#africa .international_infobox {
+  width: 57px;
+  left: 50%;
+  top: 20%;
+}
+
+#europe .international_infobox {
+  width: 57px;
+  left: 50%;
+  top: 50%;
+}
+
+#asia .international_infobox {
+  width: 44px;
+  left: 30%;
+  top: 40%;
+}
+
+#australia .international_infobox {
+  width: 86px;
+  left: 18%;
+  top: 0%;
+}
+
+#international_list_by_region {
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+#international_list_by_region > .span3 > a {
+  display: block;
+  font-size: 1.125em;
+}
+
+.gray_bg_box {
+  /*background-color: #f7f7f7;*/
+}
+
+/* Faculies */
+
+.faculties{
+  padding-left: 15px;
+}
+
+.faculties_row {
+  border-bottom: 1px solid #E7E7E7;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* Campaign */
+#campaign .form-header{
+  background-color: #e7e7e7;
+  padding: 25px;
+}
+
+#campaign_rhs_contact_information {
+  color: #737373;
+}
+
+#campaign_rhs_contact_information strong {
+  color: #231F20;
+}
+
+#main_content_main_column #campaign ul.list_type_1 {
+  margin-bottom: 60px;
+}
+
+#campaign ul.list_type_1 > li {
+  color: #737373;
+  padding-bottom: 5px;
+}
+
+#campaign ul.list_type_1 > li > h2 {
+  font-size: 1em;
+  color: #181819;
+  margin-top: 0;
+}
+
+#campaign ul.list_type_1 > li > h2 a {
+  font-size: 1.125em;
+  padding-right: 10px;
+}
+
+#campaign .form-header h2,
+#campaign .form-header p{
+  margin: 0;
+  padding: 0;
+}
+
+#campaign legend{
+  display:none;
+}
+
+#campaign label{
+  /*font-family: 'open sans';*/
+}
+
+#campaign form{
+  background-color: #f7f7f7;
+  padding: 25px;
+}
+
+#campaign input{
+  width: 90%;
+  height: 25px;
+  padding: 4px;
+  border: 2px solid #dadada;
+  background-color: #fff;
+  margin: 0 0 10px 0;
+  border-radius: 0;
+}
+
+#campaign .title {
+  width: 15%;
+  overflow: hidden;
+  border: 2px solid #DADADA;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0018/7902/arrow_down_15.png?v=0.0.2");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #FFF;
+  margin: 0 0 15px 0;
+}
+
+#campaign .course {
+  width: 90%;
+  overflow: hidden;
+  border: 2px solid #DADADA;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0018/7902/arrow_down_15.png?v=0.0.2");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #FFF;
+  margin: 0 0 15px 0;
+  padding: 0 3px;
+}
+
+#campaign .type {
+  width: 70%;
+  overflow: hidden;
+  border: 2px solid #DADADA;
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0018/7902/arrow_down_15.png?v=0.0.2");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #FFF;
+  margin: 0 0 15px 0;
+  padding: 0 3px;
+}
+
+#campaign .title select,
+#campaign .type select,
+#campaign .course select{
+  width: 130%;
+  border: 0px;
+  margin:0;
+  background-color: transparent;
+  height: 33px;
+  padding: 4px;
+}
+
+#campaign textarea{
+  width: 95%;
+  padding: 3px;
+  height: 147px;
+  border: 2px solid #DADADA;
+  border-radius: 0;
+}
+
+#campaign input[type=submit] {
+    font-family: "Gilroy-Regular";
+    font-weight: 600;
+    line-height: 2.2;
+    padding: 0 12px;
+    cursor: pointer;
+    text-align: center;
+    color: #FFF;
+    background: #25a196;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+    -moz-transition: box-shadow .4s;
+    -o-transition: box-shadow .4s;
+    -webkit-transition: box-shadow .4s;
+    transition: box-shadow .4s;
+    border-radius: 6px;
+    border: 0;
+    width: 100px;
+    height: auto;
+}
+
+#campaign input[type=submit]:hover {
+    color: #FFF;
+    box-shadow: 0 5px 5px -6px rgba(0,0,0,0.2), 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+#campaign inputchina[type=submit]{
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0016/53305/button_submit_china2.png?v=0.1.1");
+  background-repeat: no-repeat;
+  width: 149px;
+  height: 31px;
+  cursor: pointer;
+  border: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-color: transparent;
+  margin-left: 40% !important;
+  margin-top: 30px !important;
+}
+
+
+/* department */
+
+#department .all{
+  margin: 0 0 15px 0;
+  display: inline-block;
+}
+
+#department .big-thumb {
+  margin-bottom: 20px;
+  /*margin-left: 0;    */
+}
+
+.scrollbox{
+  border-top: 2px solid #e7e7e7;
+}
+
+.scrollboxes{
+  padding: 0 0 30px 0;
+  margin-bottom: 35px;
+}
+
+#department #upcoming_events .date{
+  padding: 20px 0 5px 0;
+}
+
+#department .day{
+  font-size: 3em;
+  font-weight: 600;
+  color: #929292;
+}
+
+#department .month{
+  font-size: 1.25em;/*0.45em;*/
+  font-weight: 400;
+  color: #929292;
+}
+
+#department #upcoming_events li,
+#department #latest_news li{
+  background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0005/8078/scrollbox_item_bg.png?v=0.0.3");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+}
+
+#department .caroufredsel_wrapper{
+  margin: 0!important;
+}
+
+#department_links p {
+  color: #737373;
+}
+
+/* Definition list page */
+
+#definition_list_page table{
+  margin: 0 0 60px 0;
+  border: 0;
+}
+
+#definition_list_page li{
+  list-style-type: none;
+  margin: 0 0 10px 0;
+}
+
+#definition_list_page li:before{
+  content: "\2022";
+  color: #929292;
+  margin: 0 0 0 -20px;
+  font-size: 2em;
+  position: absolute;
+}
+
+/* 30.07.2013 - Tomek */ 
+
+.a_b {
+  list-style-type: none;
+  padding: 10px 0;
+  display:inline-block;
+  font-weight: 400;
+}
+
+.display_block {
+  display: block;
+}
+
+#events-mini-calendar .mini-calendar #calendarTable tr td.active_cal a {
+  color: #000000 !important;
+}
+
+/* ####### END - Daniel Wojciechowski - Squiz PL - dwojciechowski@squiz.pl - END */
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bxslider {
+margin: 0;
+}
+
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    *zoom: 1;
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+    left: -5px;
+    background: #fff;
+    
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+        -ms-transform: translatez(0);
+        -o-transform: translatez(0);
+        transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+
+.two-col-slr .bx-wrapper {
+max-width: 534px !important;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+    left: 0px;
+    background: url(http://www.lsbu.ac.uk/__data/assets/image/0015/102741/slide_left_right_arrow.png?v=1) no-repeat center 0px;
+}
+
+.bx-wrapper .bx-next {
+    right: 6px;
+    background: url(http://www.lsbu.ac.uk/__data/assets/image/0015/102741/slide_left_right_arrow.png?v=1) no-repeat center -30px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+    border-radius: 50%;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+    background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+    background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(1, 155, 219, 0.65);
+    width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
+
+.two-col-slr .bx-wrapper .bx-caption span {
+  max-width: 534px !important;
+}
+
+
+.two-col-slr .bx-wrapper .bx-caption {
+   bottom: 9px;
+}

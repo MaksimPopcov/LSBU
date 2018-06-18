@@ -97,7 +97,7 @@ FIDDLER
     }
 
     .span12, .span5, .span7, .span4, .span6, .span3, .span9, .row-fluid .span3, .row-fluid .span4, .row-fluid .span6, .main_content_left_column_class {
-        width: 100%;
+        width: 100% !important;
         float: none;
         margin-left: 0;
     }
@@ -114,6 +114,9 @@ FIDDLER
     .row {
         margin-left: 0;
     }
+    .row-fluid .span9 {
+        width: 100% !important;
+    }
     .home_page .row {
         width: 100% !important;
     }
@@ -125,6 +128,9 @@ FIDDLER
     }
     .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
        width: 95% !important;
+       -webkit-box-shadow: 0 7px 14px 4px rgba(121, 121, 121, 0.40);
+       -moz-box-shadow: 0 7px 14px 4px rgba(121, 121, 121, 0.40);
+       box-shadow: 0 7px 14px 4px rgba(121, 121, 121, 0.40);
     }
     .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all li {
         line-height: 25px;
@@ -143,6 +149,10 @@ FIDDLER
     }
     .faculties {
         padding-left: 0;
+    }
+    #asset_contents_holder .big-thumb {
+        display: inline-block;
+        margin-bottom: 0;
     }
 
     /* work around for mobile device auto-fitting - android 4.0
@@ -210,6 +220,7 @@ FIDDLER
     }
     #top_logo {
         margin: 5px 0 0 0;
+        max-height: 80px;
     }
     #top_logo img {
         max-width: none;
@@ -281,6 +292,7 @@ FIDDLER
         height: 36px;
         margin-top: -39px;/*-46px;*/
         width: 13%;
+        cursor: pointer;
     }
     #main_menu {
         padding-top: 0;
@@ -319,7 +331,6 @@ FIDDLER
         float: none;
         max-width: 100%;
         background-color: #333333;
-        border-top: 2px solid #ffffff;
         border-bottom: 2px solid #ff9933;
     }
     #main_menu .dropdown-menu .megamenu-column {
@@ -327,7 +338,7 @@ FIDDLER
         display: block;
     }
     #main_menu_list > li ul.dropdown-menu a {
-        font-size: 1em;
+        font-size: 1em !important;
         line-height: 2em;
     }
     #main_menu_list .megamenu-column li {
@@ -346,6 +357,10 @@ FIDDLER
         color: #ff9933;
         border-bottom: 3px solid #ff9933;
     }
+    .nav-header > a:before {
+        height: 0;
+        background: none;
+    }
     #main_menu_list > li ul.dropdown-menu a:hover {
         text-decoration: none;
     }
@@ -357,7 +372,7 @@ FIDDLER
     }
 
     .mob_pointer_type1 {
-        width: 38px;
+        width: 100%;
         height: 14px;
         position: relative;
         display: block;
@@ -1058,10 +1073,12 @@ FIDDLER
         margin-top: 1px;
     }
     
-/* 4.2.6.1 - Course Page Burger menu*/
+/* 4.2.6.1 - Burger menu*/
+    #page_title,
     .course_information_page #page_title {
         margin-bottom: -10px;
     }
+    #left_navigation.close,
     .course_information_page #main_content_holder .tabs-left.close {
         overflow: visible;
         display: none;
@@ -1069,6 +1086,20 @@ FIDDLER
     .course_information_page #course_information_page_lhs_tabs {
       width: 100%;
     }
+    #left_navigation, #left_navigation a {
+      color: #737373;
+      position: relative;
+      width: 100%;
+    }
+    #left_navigation ul.menu_level_1 {
+      display: inline-block;
+      width: 100%;
+    }
+    #left_navigation > li.active:first-child a,
+    #left_navigation > li.active:first-child:hover a,
+    #left_navigation > li:first-child a,
+    #left_navigation > li:first-child a:hover,
+    #left_navigation > li:first-child:hover a,
     .course_information_page #course_information_page_lhs_tabs > li.active:first-child a,
     .course_information_page #course_information_page_lhs_tabs > li.active:first-child:hover a,
     .course_information_page #course_information_page_lhs_tabs > li:first-child a,
@@ -1077,6 +1108,8 @@ FIDDLER
       border: 0;
       border-radius: 0;
     }
+    #left_navigation > li > a:hover,
+    #left_navigation > li > a:focus,
     .course_information_page .tabs-left > .nav-tabs > li > a:hover,
     .course_information_page .tabs-left > .nav-tabs > li > a:focus {
       background:#ff9933;
@@ -1085,6 +1118,7 @@ FIDDLER
       margin: 0;
       padding: 9px 15px;
     }
+    #left_navigation a,
     .course_information_page .tabs-left a {
       font-weight: 400;
       display: block;
@@ -1092,20 +1126,22 @@ FIDDLER
       color: #737373;
       border: 0;
     }
+    #left_navigation a:hover,
     .course_information_page .tabs-left a:hover {
       color: #000000;
       background-color: #ff9933;
       border: 0;
       border-radius: 0;
     }
-    .course_information_page .mob_main_left_nav {
+    .mob_main_left_nav {
       width: 100%;
       display: block;
       position: relative;
       float:left;
       background: #fff;
+      z-index: 9;
     }
-    .course_information_page .mob_main_left_nav_btn.fa.fa-bars {
+    .mob_main_left_nav_btn.fa.fa-bars {
       font-size: 40px;
       text-align: left;
       cursor: pointer;
@@ -1115,15 +1151,20 @@ FIDDLER
       border-radius: 0;
       height: auto;
     }
-    .course_information_page #main_content_main_column {
+
+    #main_content_main_column {
         position: relative;
+    }
+    #new_div_5802 img,
+    #new_div_5808 img {
+        width: auto;
     }
 
     /* 4.2.7 Events */
     .main_content_inner_left_column {
         float: none;
         margin: 0 0 20px;
-        width: 100%;
+        width: 100% !important;
     }
     .mobile_side_search_box fieldset {
         padding: 15px 10px 15px 10px;
@@ -1164,7 +1205,7 @@ FIDDLER
         padding: 10px 0 !important;
     }
     .ev-list .events-item {
-        padding: 95px 0 0;
+        padding: 105px 0 0;
     }
     .ev-list .recommended .events-item {
         padding: 20px 0 0;
@@ -1268,6 +1309,7 @@ FIDDLER
         float: none;
         margin-right: 0;
         text-align: center;
+        width: 100%;
     }
     #news_listing  li  a.pull-left img {
         display: inline;
@@ -1280,6 +1322,13 @@ FIDDLER
 
     #news_listing > li > a.pull-left img {
         max-width: 100%;
+    }
+    #course_info_page_case_studies_list .media-body, 
+    #course_info_page_case_studies_list_overview .media-body, 
+    #news_listing .media-body, 
+    .news_listing .media-body, 
+    #people_listing .media-body {
+        width: 100%;
     }
     /* 4.2.9 Course finder */
     #main_content_left_column_PL, .two_columns_page_main_content {
@@ -1521,7 +1570,8 @@ FIDDLER
 
     /* 4.2.15 Event item */
     table.info th {
-        width: 130px;
+        width: 34%;
+        float: left;
     }
 
     /* 4.2.16 Faculties and departments */
@@ -1593,16 +1643,16 @@ FIDDLER
 
     .play-video-mobile a {
         background-image: url(http://www.lsbu.ac.uk/__data/assets/image/0005/23864/play-video-150px-v2.png?v=0.0.3);
-        background-position: left -88px;
+        background-position: left -83px;
         background-repeat: no-repeat;
         display: block;
-        height: 70px;
+        height: 80px;
         text-indent: -9999px;
-        width: 150px;
+        width: 80px;
     }
 
     .play-video-mobile a:hover, .play-video-mobile a:focus, .play-video-mobile a:active {
-        background-position: left -1px;
+        background-position: 0px 0px;
     }
 
     .department_landing_page_promoted_links .row .span3 {
@@ -1676,7 +1726,7 @@ FIDDLER
         line-height: normal;
     }
     .landing-simple-links-col, .department-scrollbox {
-        width: 100%;
+        width: 100% !important;
         float: none;
         margin-left: 0;
     }
@@ -1825,6 +1875,9 @@ FIDDLER
     #campaign .title {
         width: 30%;
     }
+    #main_content_main_column #campaign {
+        padding: 0 9%;
+    }
     /*
     #campaign_landing_page_slider {
         height: auto;
@@ -1931,7 +1984,7 @@ FIDDLER
     }
 
     .ev-list .date {
-        background-image: url(http://www.lsbu.ac.uk/__data/assets/image/0008/23777/cloud2.png?v=0.0.3);
+        background-image: url(http://www.lsbu.ac.uk/__data/assets/image/0012/4440/cloud.png?v=0.0.3);
     }
 
     .slider_image_title_mobile, .home_banner_image_title_mobile_description {
@@ -2030,19 +2083,17 @@ FIDDLER
     }
     /*4.2.22 - Top navigation pseudo arrow on burger menu*/
     .mob_pointer_type1.active.fa.fa-sort-asc.orange:before {
-        position: absolute;
+        position: relative;
         top: -18px;
-        text-align: right;
-        right: -15px;
+        width:25%;
         font-size: 30px;
         color: #ff9933;
     }
     .mob_pointer_type1.fa.fa-sort-asc.black:before {
         color:#333;
-        position: absolute;
+        position: relative;
         top: -18px;
-        text-align: right;
-        right: -15px;
+        width:25%;
         font-size: 30px;
     }
 }

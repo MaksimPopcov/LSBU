@@ -974,6 +974,27 @@ jQuery(document).ready( function () {
       }
     }
 });
+//Burger menu on Left navigation
+jQuery(document).ready( function () {
+    if (jQuery(window).width() < 768) {
+        if (jQuery("#left_navigation").length){
+          jQuery("#left_navigation").prependTo("#main_content_main_column");
+          jQuery("#main_content_main_column").prepend('<div class="mob_main_left_nav"><div class="mob_main_left_nav_btn fa fa-bars"></div></div>');
+          jQuery(".section_menu_link.hide_desktop").hide();
+          jQuery("#left_navigation").addClass("close");
+          jQuery('.mob_main_left_nav_btn').click(function() {
+              if(jQuery("#left_navigation").hasClass("close")){
+                 jQuery("#left_navigation").slideDown('fast').removeClass("close");
+              } else {
+                 jQuery("#left_navigation").slideUp('fast').addClass("close");
+              }
+          });
+        } else {
+          jQuery('.mob_main_left_nav').css('display', 'none !important');
+        }
+    }
+});
+
 
 //3.5 Adding class to when Courses in top nav burger menu has got class of active
 jQuery(document).ready( function () {

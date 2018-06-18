@@ -1198,7 +1198,6 @@ input#top_search_input:focus {
 .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
   width: 320px;
   margin-top: -2px;
-  border-radius: 10px 10px 0 0;
 }
 
 #top_search_input_wrapper {
@@ -1239,20 +1238,12 @@ input#top_search_input:focus {
 #main_menu {
   position: relative;
   z-index: 3;
-  /*RESKIN*/
   margin-bottom: 0 !important;
-  padding-top: 9px;
   margin-left:260px;
 }
 
-/* RESKIN
-.home_page #main_menu {
-  margin-bottom: 20px;
-}
-*/
-
 #main_menu .navbar-inner {
-  min-height: 30px;
+  min-height: 34px;
   padding: 0;
   border: 0;
   -webkit-border-radius: 0;
@@ -1262,7 +1253,7 @@ input#top_search_input:focus {
   background: none;
   box-shadow: 0;
   margin: 0 -9999rem;
-  padding: .25rem 9999rem;
+  padding: .39rem 9999rem;
   background: #333333;
   filter:none;
   webkit-box-shadow: 0px 0px 20px 2px rgba(51,51,51,0.75);
@@ -1357,7 +1348,7 @@ float:left;
   z-index: 9999;
   display: inline-block;
   width: 100%;
-  height: 15px;
+  height: 10px;
   margin-top: 0;
   border-bottom: 2px solid #ff9933;
   /*background: url("") no-repeat center bottom;*/
@@ -1424,7 +1415,7 @@ li.dropdown.open > a {
   left: auto;
   width: 1002px;
   width: auto;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
   margin: -1px 0 0 0;
   border: 2px solid #333333;
@@ -2005,7 +1996,13 @@ ul.accreditation_logos li:first-child {
 .three_columns_page_main_content img {
     width: 100%;
 }
-
+.three_columns_page_main_content #tab_professional_links img {
+    width: auto;
+}
+.three_columns_page_main_content #tab_prepare_to_start #main_content_holder {
+    min-width: auto;
+    width: 100%;
+}
 .two_columns_page_main_content {
     width: 72%;
     margin-left: 2%;
@@ -2379,7 +2376,7 @@ ul.accreditation_logos li:first-child {
     width: 100%;
 }
 .campaign_landing_page #main_content_main_column, .campaign_landing_page #main_content_main_column_PL {
-    width: 70%;
+    width: 80%;
 }
 #campaign #course_search_frame {
     min-height: 100px;
@@ -3288,6 +3285,10 @@ img.twitter_thumb {
 }
 
 /* accordions settings */
+.accordion {
+  margin-bottom: 20px;
+  float: left;
+}
 .accordion-group {
   margin-bottom: 1px;
   border: 0;
@@ -3581,6 +3582,9 @@ ul.case_studies_slider_nav_list li {
 .media {
   margin-top: 15px;
   padding-bottom: 10px;
+}
+#course_info_page_case_studies_list .media img {
+    margin-bottom: 10px;
 }
 
 #course_info_page_case_studies_list > li > a > img,
@@ -4190,7 +4194,7 @@ blockquote.pull-right p:first-child {
 
 .media > .pull-left {
     margin-right: 10px;
-    width: 40%;
+    width: 37%;
 }
 
 #top_of_page_link {
@@ -4251,7 +4255,7 @@ blockquote.pull-right p:first-child {
 }
 
 .span12 {
-    width: 100%;
+    width: 97.5%;
 }
 
 .offset_57px {
@@ -5227,15 +5231,17 @@ ul.ui-autocomplete {
 }
 
 ul.ui-autocomplete h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding: 5px;
-  background-color: #25a196;
-  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #ff9933;
 }
 
 ul.ui-autocomplete h2 a strong {
-    color: #fff !important;
-    font-size: 0.9em;
+  color: #ff9933 !important;
+  font-size: 0.9em;
 }
 
 ul.ui-autocomplete li.ui-menu-item {
@@ -5299,6 +5305,7 @@ dt {
   padding-top: 15px;
   padding-bottom: 15px;
   border-top: 1px solid #e7e7e7;
+  word-break: break-all;
 }
 
 dd {
@@ -5351,16 +5358,16 @@ dd {
 /* department pages scrollboxes */
 .department-scrollbox {
   float: left;
-  width: 48%;
+  width: 47%;
   min-height: 1px;
-  margin-left: 0;
+  margin-left: 2.5%;
 }
 
 .department-scrollboxes-row {
     width: 100%;
 }
 .department-scrollbox:first-child {
-    margin-right: 2.5%;
+    margin-left:0;
 }
 
 .department-scrollbox .scrollbox {
@@ -5782,7 +5789,7 @@ form.span7.search-space {
   font-family: "Gilroy-Regular";
   font-weight: 300;
   text-decoration: none;
-  color: #019bdb;
+  color: #25a196;
   outline: none;
 }
 
@@ -6872,6 +6879,11 @@ iframe {
 #faculties-and-departments .school-landing-school {
   margin-bottom: 15px;
   margin-top: 25px;
+  width: 45%;
+}
+
+#faculties-and-departments .school-landing-school:first-child {
+  margin-left: 0 !important;
 }
 
 #faculties-and-departments .school-landing-school .description {
@@ -6890,6 +6902,9 @@ iframe {
   border-bottom: none;
 }
 
+#faculties-and-departments .school-landing-school .img-wrapper img {
+    width: 100%;
+}
 
 .row.featured-landing.bus-schools {
   padding-bottom: 30px;
@@ -7455,6 +7470,9 @@ header, nav, #footer_frame .container, #breadcrumbs {
 } 
 
 @media all and (min-width: 768px)  and (max-width: 990px) {
+    body {
+      background: #f5f5f5 url(http://www.lsbu.ac.uk/__data/assets/image/0018/123327/body-bg.png?v=0.0.4) 0 -23px repeat-x;
+    }
     /*Header and Menu*/
     header,
     nav {
@@ -7715,25 +7733,21 @@ header, nav, #footer_frame .container, #breadcrumbs {
 }
 
 /*Big resolution media querys*/
-@media all and (min-width: 989px) and (max-width: 1280px) {
+
+@media all and (min-width: 989px) and  (max-width: 1280px) {
+  .home_page #latest_feeds_twitter_col {
+      width: 82% !important;
+      margin: 1% 8%;
+  }
   #footer_location_map_holder {
       width: 100%;
       display: inline;
       position: relative;
       float: left;
   }
-  .home_page #latest_feeds_twitter_col {
-      width: 82% !important;
-      margin: 1% 8%;
+  li[data-pageid='1340'] ul.dropdown-menu {
+      left: -318px !important;
   }
-}
-
-@media all and (max-width: 1280px) and (min-width: 989px) {
-  .home_page #latest_feeds_twitter_col {
-      width: 82% !important;
-      margin: 1% 8%;
-  }
-
 }
 @media screen and (min-width: 989px) and (max-width: 1680px){
   #course_info_page_case_studies_list > li > a > img,
@@ -7748,6 +7762,17 @@ header, nav, #footer_frame .container, #breadcrumbs {
   #latest_feeds_twitter_col .latest_news_item:after {
       font-size: 75px;
   }
+  li[data-pageid='1340'] ul.dropdown-menu {
+        left: -256px !important;
+        margin: 0 -9999rem !important;
+        padding: .39rem 9999rem;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1680px) { 
+    li[data-pageid='1340'] ul.dropdown-menu {
+        left: -315px !important;
+    }
 }
 
 @media screen and (min-width: 1680px) {
@@ -7764,6 +7789,8 @@ header, nav, #footer_frame .container, #breadcrumbs {
     }
     li[data-pageid='1340'] ul.dropdown-menu {
         left: -256px !important;
+        margin: 0 -9999rem !important;
+        padding: .39rem 9999rem;
     }
     li[data-pageid='1396'] ul.dropdown-menu {
       left: -150px !important;
@@ -7812,9 +7839,9 @@ header, nav, #footer_frame .container, #breadcrumbs {
 }
 
 @media only screen and (min-width: 1680px) and (max-width: 1920px) {
-  #footer_frame .container {
+  /*#footer_frame .container {
       width: 80%;
-  }
+  }*/
   .home_page #main_content_main_column #latest_feeds_twitter_col {
       margin: 1% 8% !important;
   }

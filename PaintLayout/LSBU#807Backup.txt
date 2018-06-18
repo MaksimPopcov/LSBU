@@ -1,0 +1,314 @@
+<MySource_AREA id_name="exit_area" design_area="exit" print="no" />
+<MySource_AREA id_name="nested_EES_code" design_area="nest_content" print="no" />
+<MySource_AREA id_name="simple_edit_EES" design_area="show_if">
+<MySource_SET name="condition" value="simple_edit_mode" />
+ <MySource_THEN>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>Loading Easy Edit Suite...</title>
+ <!-- Use a nested standard page (set to raw html) for custom CSS and JS file references. Avoids editing design file. -->
+ <MySource_PRINT id_name="nested_EES_code" />
+ </head>
+ <body></body>
+ </html>
+ <MySource_PRINT id_name="exit_area" />
+ </MySource_THEN></MySource_AREA>
+<!DOCTYPE html>
+
+
+<!--[if lt IE 7 ]> <html lang="en" class="ie6" prefix="fb: https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7" prefix="fb: https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8" prefix="fb: https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9" prefix="fb: https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]> <html lang="en" class="" prefix="fb: https://www.facebook.com/2008/fbml"><![endif]-->
+<head>
+<meta charset="utf-8" />
+<title><MySource_AREA id_name="title_tag" design_area="nest_content" cache="1" /> | <MySource_PRINT id_name="__global__" var="site_name" /></title>
+
+<!-- Start Metadata -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<meta name="viewport" content="width=device-width" />-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<MySource_AREA id_name="metadata" design_area="metadata" />
+<MySource_AREA id_name="course_listing_metadata_mode" design_area="nest_content" print="yes" cache="1" />
+<MySource_AREA id_name="course_listing_metadata_start_date" design_area="nest_content" print="yes" cache="1" />
+
+<MySource_AREA id_name="course_listing_metadata" design_area="nest_content" />
+<MySource_AREA id_name="news_listing_date" design_area="nest_content" print="yes" cache="1" />
+
+
+<MySource_AREA id_name="event_dates" design_area="nest_content" print="no" cache="1" />
+<MySource_AREA id_name="event_dates_show" design_area="show_if">
+  <MySource_SET name="condition" value="keyword_regexp"/>
+  <MySource_SET name="condition_keyword" value="asset_metadata_Event.Start.Date"/>
+  <MySource_SET name="condition_keyword_match" value="%globals_asset_metadata_Event.End.Date%" />
+  <MySource_THEN>
+    <meta name="Event.Days.Listing" content="<MySource_PRINT id_name="__global__" var="asset_metadata_Event.Start.Date.Single" />" /> 
+  </MySource_THEN>
+  <MySource_ELSE>
+    <MySource_PRINT id_name="event_dates" />
+  </MySource_ELSE>
+</MySource_AREA>
+
+<!-- Additional OG metadata -->
+<MySource_AREA id_name="og_metadata_condition" design_area="show_if">
+<MySource_SET name="condition" value="keyword_regexp"/>
+  <MySource_SET name="condition_keyword" value="asset_thumbnail_url"/>
+ <MySource_SET name="condition_keyword_match" value="http" />
+  <MySource_THEN><meta name="og:image" content="%asset_thumbnail_url%" /></MySource_THEN>
+  <MySource_ELSE><meta name="og:image" content="%globals_asset_url:21267%" /></MySource_ELSE>
+</MySource_AREA>
+<!-- end Additional OG metadata -->
+
+<!-- End Metadata -->
+<!-- Start CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<MySource_AREA id_name="bootstrap_css" design_area="linked_css" />
+<MySource_AREA id_name="flexslider_css" design_area="linked_css" />
+<MySource_AREA id_name="global" design_area="linked_css" />
+<MySource_AREA id_name="global_daniel" design_area="linked_css" />
+<MySource_AREA id_name="bootstrap_responsive_css" design_area="linked_css" />
+<MySource_AREA id_name="responsive_mobile_css" design_area="linked_css" />
+<MySource_AREA id_name="responsive_mobile_css_nest_content" design_area="nest_content" cache="1" />
+<MySource_AREA id_name="colorbox_css" design_area="linked_css" />
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
+
+<!--[if IE 8]>
+  <MySource_AREA id_name="ie8_css" design_area="linked_css" />
+<![endif]-->
+<!--[if lt IE 8]>
+  <MySource_AREA id_name="ie7_css" design_area="linked_css" />
+<![endif]-->
+<!-- End CSS -->
+
+<!-- Start fav icon -->
+<link rel="icon" href="http://www.lsbu.ac.uk/__data/assets/file/0014/102506/favicon.ico" type="image/x-icon"/>
+<MySource_AREA id_name="favicon" design_area="nest_content" cache="1" />
+<!-- End fav icon -->
+
+<!-- robots.txt -->
+<MySource_AREA id_name="robots" design_area="nest_content" cache="1" />
+
+<MySource_AREA id_name="millenial_conversion_pixel" design_area="nest_content" print="no" cache="1" />
+
+</head>
+
+<MySource_AREA id_name="column_width" design_area="declared_vars" print="no"> 
+  <MySource_DECLARE name="left_column_width" value="show_column" type="text" description="The left column size."/>
+  <MySource_DECLARE name="main_column_width" value="three_columns_page_main_content" type="text" description="The main column size."/>
+  <MySource_DECLARE name="right_column_width" value="show_column" type="text" description="The right column size."/>
+</MySource_AREA>
+
+<MySource_AREA id_name="additional_body_class" design_area="declared_vars" print="no"> 
+  <MySource_DECLARE name="home_page" value="home_page" type="text" description="Home page body class."/>
+</MySource_AREA>
+
+<body class='<MySource_PRINT id_name="additional_body_class" var="home_page" />'>
+<MySource_AREA id_name="google_tag_manager" design_area="nest_content" cache="1" />
+<div class="overlay-background">
+    <div class="overlay-container">
+        <div class="overlay">
+        </div>
+    </div>
+</div>
+<div id="fb-root"></div>
+<div class="whole_content_holder">
+<div id="main_container" class="container">
+
+<!-- noindex -->
+
+  <!-- start header section-->
+  <header>
+    <MySource_AREA id_name="top_links" design_area="nest_content" print="yes" cache="1" />
+    <div id="logo_search_section" class="row">
+      <MySource_AREA id_name="top_logo" design_area="nest_content" print="yes" cache="1" />
+      <MySource_AREA id_name="top_search" design_area="nest_content" print="yes" cache="1" />
+      <MySource_AREA id_name="twitter_hashtag" design_area="nest_content" print="no" cache="1" />
+    </div>
+  </header>
+  <!-- end header section -->
+  <div class="clear">&nbsp;</div>
+  
+  <!-- start #main_menu -->
+  <MySource_AREA id_name="main_nav_mark_current_root" design_area="menu_normal" cache="1" print="yes">        
+    <MySource_SET name="self_link" value="true" />
+    <MySource_SET name="level" value="top" />
+    <MySource_SET name="settings.class.normal" value="" />
+    <MySource_SET name="settings.class.current" value="current" />
+    <MySource_SET name="settings.class.hierarchy" value="current" />
+
+    <MySource_ASSET>
+      <input name='pageid-<MySource_PRINT var="asset_assetid" />' type="hidden" value='<MySource_PRINT var="asset_assetid" />' class='pageid-input <MySource_PRINT var="settings.class" />' /> 
+    </MySource_ASSET>
+  </MySource_AREA>
+  
+  <nav>
+    <MySource_AREA id_name="main_menu" design_area="nest_content" print="yes" cache="1" />
+  </nav>
+
+  <div class="clear">&nbsp;</div>
+  
+  <!-- start #breadcrumbs -->
+      <MySource_AREA id_name="Breadcrumbs" design_area="asset_lineage">
+  <div id="breadcrumbs" class="row">
+    <div class="span12">
+        <MySource_SET name="prefix_with_divider" value="false" />
+        <MySource_SET name="suffix_with_divider" value="true" />
+        <MySource_SET name="prefix_with_home_link" value="false" />
+        <MySource_SET name="suffix_with_current_link" value="false" />
+        <MySource_SET name="show_hidden_links" value="false" />
+        <a href='<MySource_PRINT id_name="__global__" var="site_link" full_url="true" />' title="Home page">Home</a>&nbsp;&nbsp;&raquo;&nbsp;
+        <MySource_ASSET><span><a href="<MySource_PRINT var="asset_link"/>"><MySource_PRINT var="asset_short_name" /></a></span></MySource_ASSET>
+        <MySource_DIVIDER>
+          &nbsp;&raquo;&nbsp;
+        </MySource_DIVIDER>
+        <span><MySource_PRINT var="asset_short_name" /></span>
+
+    </div>
+  </div>
+      </MySource_AREA>
+
+  <!-- end #breadcrumbs -->
+  
+  <div class="clear">&nbsp;</div>
+
+  <!-- start #main_content -->
+  <div id="main_content" class="row">
+    <div id="main_content_holder" class="span12">
+      <MySource_AREA id_name="landing_header" design_area="nest_content" print="yes" cache="1" />
+      <div class="row">
+        <!-- Page title -->
+        <MySource_AREA id_name="page_title" design_area="nest_content" print="yes" cache="1" />
+
+        <div id="main_content_left_column" class='span <MySource_PRINT id_name="column_width" var="left_column_width" />'>
+          <!-- generating header for left navigation -->
+          <MySource_AREA id_name="left_navigation_header" design_area="asset_lineage" print="no">
+            <MySource_SET name="levels_to_print" value="1" />
+            <MySource_SET name="prefix_with_divider" value="false" />
+            <MySource_SET name="suffix_with_divider" value="false" />
+            <MySource_SET name="prefix_with_home_link" value="false" />
+            <MySource_SET name="suffix_with_current_link" value="true" />
+            <MySource_SET name="show_hidden_links" value="false" />
+            <MySource_ASSET><a href="<MySource_PRINT var="asset_link"/>"><MySource_PRINT var="asset_short_name" /></a></MySource_ASSET>
+          </MySource_AREA>
+          <!-- ************************************* -->
+          
+          <MySource_AREA id_name="left_navigation" design_area="menu_normal" cache="1" print="no">
+            <nav>
+              <!-- start #left_navigation -->
+              <div id="left_navigation">
+                <MySource_SET name="show_subs" value="on_current" />
+                <MySource_SET name="self_link" value="true" />
+                <MySource_SET name="level" value="sub" />
+                <MySource_SET name="settings.class.normal" value="" />
+                <MySource_SET name="settings.class.current" value="active" />
+                <MySource_SET name="settings.class.hierarchy" value="current" />
+                <ul class="menu_level_1">
+                  <li class="left_navigation_header">
+                    <MySource_PRINT id_name="left_navigation_header" />
+                    <ul class="menu_level_2">
+                      <MySource_ASSET>
+                        <li class="<MySource_PRINT var="settings.class" />">
+                          <a href="<MySource_PRINT var="asset_link" />" title="<MySource_PRINT var="asset_short_name" /> in Side Nav"> <MySource_PRINT var="asset_short_name" /></a>
+                          
+                          <MySource_SUB design_area="menu_normal">
+                            <MySource_SET name="show_subs" value="on_current" />
+                            <MySource_SET name="settings.class.normal" value="" />
+                            <MySource_SET name="settings.class.current" value="active" />
+                            <MySource_SET name="settings.class.hierarchy" value="current" />
+                            
+                            <ul class="menu_level_3">
+                              <MySource_ASSET>
+                                <li class="<MySource_PRINT var="settings.class" />">
+                                  <a href="<MySource_PRINT var="asset_link" />" title="<MySource_PRINT var="asset_short_name" /> in Side Nav"><MySource_PRINT var="asset_short_name" /></a>
+                                                      
+                                  <MySource_SUB design_area="menu_normal">
+                                    <MySource_SET name="show_subs" value="on_current" />
+                                    <MySource_SET name="settings.class.normal" value="" />
+                                    <MySource_SET name="settings.class.current" value="active" />
+                                    <MySource_SET name="settings.class.hierarchy" value="current" />
+                                    
+                                    <ul class="menu_level_4">
+                                      <MySource_ASSET>
+                                        <li class="<MySource_PRINT var="settings.class" />">
+                                          <a href="<MySource_PRINT var="asset_link" />" title="<MySource_PRINT var="asset_short_name" /> in Side Nav"><MySource_PRINT var="asset_short_name" /></a>
+                                        </li>
+                                      </MySource_ASSET>
+                                    </ul>
+                                  </MySource_SUB>
+                                </li>
+                              </MySource_ASSET>
+                            </ul>
+                          </MySource_SUB>
+                        </li>
+                      </MySource_ASSET>
+                      <MySource_DIVIDER></MySource_DIVIDER>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- end #left_navigation -->
+            </nav>
+          </MySource_AREA>
+
+          <MySource_AREA id_name="LHS_Course_Information_Page_tabs" design_area="nest_content" print="no" cache="1" />
+        </div>
+        <!-- end #main_content_left_column -->
+
+        <div id="main_content_main_column" class='span <MySource_PRINT id_name="column_width" var="main_column_width" />'>
+          <MySource_AREA id_name="body" design_area="body" />
+
+          <MySource_AREA id_name="social_media_share_page" design_area="nest_content" print="yes" cache="1" />
+          
+          <MySource_AREA id_name="top_of_page" design_area="nest_content" print="yes" cache="1" />
+          
+          <MySource_AREA id_name="social_media_share_page_main_column_mobile" design_area="nest_content" print="no" cache="1" />
+          <MySource_AREA id_name="top_of_page_main_column_mobile" design_area="nest_content" print="no" cache="1" />
+        </div>
+        <!-- end #main_content_main_column -->
+        
+        <div id="main_content_right_column" class='span <MySource_PRINT id_name="column_width" var="right_column_width" />'>
+          <MySource_AREA id_name="RHS" design_area="nest_content" print="no" cache="1" />
+          <MySource_AREA id_name="social_media_share_page_mobile" design_area="nest_content" print="no" cache="1" />
+          <MySource_AREA id_name="top_of_page_mobile" design_area="nest_content" print="no" cache="1" />
+        </div>
+        <!-- end #main_content_right_column -->
+      </div>
+    </div>
+    <!-- end #main_content_holder -->
+  </div>
+  <!-- end #main_content -->
+</div>
+<!-- end #main_container -->
+</div>
+<!-- end #whole_content_holder -->
+
+<footer>
+    <div id="footer_frame">
+      <div class="container">
+        <MySource_AREA id_name="footer" design_area="nest_content" print="yes" cache="1" />
+      </div>
+      <!-- end .container -->
+    </div>
+    <!-- end #footer_frame -->
+</footer>
+<!-- end html5 footer -->
+
+<!--
+<footer>
+  <div id="footer_bottom">
+    <div class="container">
+      <MySource_AREA id_name="footer_bottom_links" design_area="nest_content" print="yes" cache="1" />
+    </div>
+  </div>
+</footer>
+ end html5 footer -->
+
+<!-- endnoindex -->
+
+<!-- Start JS -->
+<MySource_AREA id_name="js_files" design_area="nest_content" cache="1" />
+<!-- End JS -->
+</body>
+</html>
