@@ -67,7 +67,7 @@
         padding: 0; 
         overflow-x: hidden; 
         width: 100%; 
-        background: #f5f5f5 url("http://www.lsbu.ac.uk/__data/assets/image/0018/123327/body-bg.png?v=0.0.4") 0 0 repeat-x; }
+        background: #f5f5f5 url(http://www.lsbu.ac.uk/__data/assets/image/0018/123327/body-bg.png?v=0.0.4) 0 0 repeat-x; }
 
     .show_mobile { display: block; }
     .hide_mobile { display: none; }
@@ -88,7 +88,7 @@
     }
 
     .span12, .span5, .span7, .span4, .span6, .span3, .span9, .row-fluid .span3, .row-fluid .span4, .row-fluid .span6, .main_content_left_column_class {
-        width: 100% !important;
+        width: 100%;
         float: none;
         margin-left: 0;
     }
@@ -105,9 +105,6 @@
     .row {
         margin-left: 0;
     }
-    .row-fluid .span9 {
-        width: 100% !important;
-    }
     .home_page .row {
         width: 100% !important;
     }
@@ -119,9 +116,6 @@
     }
     .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
        width: 95% !important;
-       -webkit-box-shadow: 0 7px 14px 4px rgba(121, 121, 121, 0.40);
-       -moz-box-shadow: 0 7px 14px 4px rgba(121, 121, 121, 0.40);
-       box-shadow: 0 7px 14px 4px rgba(121, 121, 121, 0.40);
     }
     .ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all li {
         line-height: 25px;
@@ -141,10 +135,6 @@
     .faculties {
         padding-left: 0;
     }
-    #asset_contents_holder .big-thumb {
-        display: inline-block;
-        margin-bottom: 0;
-    }
 
     /* work around for mobile device auto-fitting - android 4.0
     #main_content_main_column p, #main_content_main_column_PL p, #main_content_main_column div, #main_content_main_column_PL div {
@@ -154,12 +144,6 @@
     */
 
     /* 2. Header */
-    header, nav, #footer_frame .container, #breadcrumbs {
-        width: auto;
-        margin: 0 auto;
-        position: relative;
-        min-width: auto;
-    }
     .whole_content_holder .container header,
     .whole_content_holder .container nav{
         width: 100% !important;
@@ -211,7 +195,6 @@
     }
     #top_logo {
         margin: 5px 0 0 0;
-        max-height: 80px;
     }
     #top_logo img {
         max-width: none;
@@ -278,12 +261,11 @@
         position: relative;
     }
     #mobile_menu_toggle {
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0005/19085/bg_menu_mobile.png?v=0.2.1") center 9px no-repeat #ff9933;
+        background: url(mysource_files/bg_menu_mobile.png) center 9px no-repeat #ff9933;
         float: right;
         height: 36px;
         margin-top: -39px;/*-46px;*/
         width: 13%;
-        cursor: pointer;
     }
     #main_menu {
         padding-top: 0;
@@ -322,6 +304,7 @@
         float: none;
         max-width: 100%;
         background-color: #333333;
+        border-top: 2px solid #ffffff;
         border-bottom: 2px solid #ff9933;
     }
     #main_menu .dropdown-menu .megamenu-column {
@@ -329,7 +312,7 @@
         display: block;
     }
     #main_menu_list > li ul.dropdown-menu a {
-        font-size: 1em !important;
+        font-size: 1em;
         line-height: 2em;
     }
     #main_menu_list .megamenu-column li {
@@ -612,7 +595,7 @@
         border: none;
     }
     #course_search_submit {
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0013/123331/course-search-btn-mob.png?v=0.0.5") top right no-repeat;
+        background: url(mysource_files/course-search-btn-mob.png) top right no-repeat;
         height: 30px;
         width: 30px;
         text-indent: -9999px;
@@ -621,7 +604,7 @@
         top: 9px;
     }
     #course_search_submit:hover, #course_search_submit:focus {
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0013/123331/course-search-btn-mob.png?v=0.0.5") bottom right no-repeat;
+        background: url(mysource_files/course-search-btn-mob.png) bottom right no-repeat;
         height: 30px;
         width: 30px;
     }
@@ -825,7 +808,7 @@
     img.main_image_w356 { max-width: 100%; height: auto; }
     img.main_image_w356.pull-left { margin-bottom: 25px; float: none; }
     .page_top {
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0013/123421/top_of_page_bg_new.png?v=0.0.3") no-repeat scroll center 15px rgba(0, 0, 0, 0);
+        background: url(mysource_files/top_of_page_bg_new.png) no-repeat scroll center 15px rgba(0, 0, 0, 0);
         color: #000000;
         display: block;
         font-family: 'open sans';
@@ -837,7 +820,7 @@
         width: 150px;
     }
     a.section_menu_link {
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0009/19485/down_arrow.png?v=0.2.1") right center no-repeat;
+        background: url(mysource_files/down_arrow.png) right center no-repeat;
         margin: 10px 0 0 5%;
         padding: 0 25px 0 0;
         font-weight: normal;
@@ -1014,7 +997,7 @@
     }
 
     .mobile_events_down, .mobile_news_down {
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0004/19588/bottom_arrow_big.png?v=0.2.1") top left no-repeat;
+        background: url(mysource_files/bottom_arrow_big.png) top left no-repeat;
         width: 47px;
         height: 47px;
         margin: -40px auto 30px;
@@ -1048,28 +1031,22 @@
     .course-staff-listing img {
         margin-bottom: 15px;
     }
+
     #course_info_page_case_studies_list .media > .pull-left {
         float: none;
         margin: 0;
     }
+
     #course_info_page_case_studies_list > li > a > img {
         max-width: 100%;
         margin-bottom: 15px;
         margin-top: 0;
     }
-    #course_info_page_case_studies_list > li > a > img,
-    #course_info_page_case_studies_list_overview > li > a > img,
-    #course_info_page_facilities_list > li > a > img {
-        max-width: none;
-        margin-top: 1px;
-    }
     
-/* 4.2.6.1 - Burger menu*/
-    #page_title,
+/* 4.2.6.1 - Course Page Burger menu*/
     .course_information_page #page_title {
         margin-bottom: -10px;
     }
-    #left_navigation.close,
     .course_information_page #main_content_holder .tabs-left.close {
         overflow: visible;
         display: none;
@@ -1077,23 +1054,6 @@
     .course_information_page #course_information_page_lhs_tabs {
       width: 100%;
     }
-    #left_navigation, #left_navigation a {
-      color: #737373;
-      position: relative;
-      width: 100%;
-    }
-    #left_navigation ul.menu_level_2 > li > ul li a {
-      width: auto;
-    }
-    #left_navigation ul.menu_level_1 {
-      display: inline-block;
-      width: 100%;
-    }
-    #left_navigation > li.active:first-child a,
-    #left_navigation > li.active:first-child:hover a,
-    #left_navigation > li:first-child a,
-    #left_navigation > li:first-child a:hover,
-    #left_navigation > li:first-child:hover a,
     .course_information_page #course_information_page_lhs_tabs > li.active:first-child a,
     .course_information_page #course_information_page_lhs_tabs > li.active:first-child:hover a,
     .course_information_page #course_information_page_lhs_tabs > li:first-child a,
@@ -1102,8 +1062,6 @@
       border: 0;
       border-radius: 0;
     }
-    #left_navigation > li > a:hover,
-    #left_navigation > li > a:focus,
     .course_information_page .tabs-left > .nav-tabs > li > a:hover,
     .course_information_page .tabs-left > .nav-tabs > li > a:focus {
       background:#ff9933;
@@ -1112,7 +1070,6 @@
       margin: 0;
       padding: 9px 15px;
     }
-    #left_navigation a,
     .course_information_page .tabs-left a {
       font-weight: 400;
       display: block;
@@ -1120,22 +1077,20 @@
       color: #737373;
       border: 0;
     }
-    #left_navigation a:hover,
     .course_information_page .tabs-left a:hover {
       color: #000000;
       background-color: #ff9933;
       border: 0;
       border-radius: 0;
     }
-    .mob_main_left_nav {
+    .course_information_page .mob_main_left_nav {
       width: 100%;
       display: block;
       position: relative;
       float:left;
       background: #fff;
-      z-index: 9;
     }
-    .mob_main_left_nav_btn.fa.fa-bars {
+    .course_information_page .mob_main_left_nav_btn.fa.fa-bars {
       font-size: 40px;
       text-align: left;
       cursor: pointer;
@@ -1145,20 +1100,15 @@
       border-radius: 0;
       height: auto;
     }
-
-    #main_content_main_column {
+    .course_information_page #main_content_main_column {
         position: relative;
-    }
-    #new_div_5802 img,
-    #new_div_5808 img {
-        width: auto;
     }
 
     /* 4.2.7 Events */
     .main_content_inner_left_column {
         float: none;
         margin: 0 0 20px;
-        width: 100% !important;
+        width: 100%;
     }
     .mobile_side_search_box fieldset {
         padding: 15px 10px 15px 10px;
@@ -1199,7 +1149,7 @@
         padding: 10px 0 !important;
     }
     .ev-list .events-item {
-        padding: 105px 0 0;
+        padding: 95px 0 0;
     }
     .ev-list .recommended .events-item {
         padding: 20px 0 0;
@@ -1253,7 +1203,7 @@
         right: 0;
         width: 41px;
         z-index: 100;
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0011/21710/search_courses_select_bg.png?v=0.1.1") no-repeat right top;
+        background: url(mysource_files/search_courses_select_bg.png) no-repeat right top;
         text-decoration: none;
     }
 
@@ -1303,7 +1253,6 @@
         float: none;
         margin-right: 0;
         text-align: center;
-        width: 100%;
     }
     #news_listing  li  a.pull-left img {
         display: inline;
@@ -1316,13 +1265,6 @@
 
     #news_listing > li > a.pull-left img {
         max-width: 100%;
-    }
-    #course_info_page_case_studies_list .media-body, 
-    #course_info_page_case_studies_list_overview .media-body, 
-    #news_listing .media-body, 
-    .news_listing .media-body, 
-    #people_listing .media-body {
-        width: 100%;
     }
     /* 4.2.9 Course finder */
     #main_content_left_column_PL, .two_columns_page_main_content {
@@ -1353,7 +1295,7 @@
         background-position: -62px -4px;
     }
     div.az-toggle {
-        background: url("http://www.lsbu.ac.uk/__data/assets/image/0016/4246/lhs_news_filter_accordion_header_bg.png?v=0.0.9") no-repeat scroll -20px -50px #FFFFFF;
+        background: url(mysource_files/lhs_news_filter_accordion_header_bg.png) no-repeat scroll -20px -50px #FFFFFF;
         font-size: 1.2em;
         font-weight: bold;
         margin-bottom: 15px;
@@ -1564,8 +1506,7 @@
 
     /* 4.2.15 Event item */
     table.info th {
-        width: 34%;
-        float: left;
+        width: 130px;
     }
 
     /* 4.2.16 Faculties and departments */
@@ -1636,17 +1577,17 @@
     }
 
     .play-video-mobile a {
-        background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0005/23864/play-video-150px-v2.png?v=0.0.3");
-        background-position: left -83px;
+        background-image: url(mysource_files/play-video-150px-v2.png);
+        background-position: left -88px;
         background-repeat: no-repeat;
         display: block;
-        height: 80px;
+        height: 70px;
         text-indent: -9999px;
-        width: 80px;
+        width: 150px;
     }
 
     .play-video-mobile a:hover, .play-video-mobile a:focus, .play-video-mobile a:active {
-        background-position: 0px 0px;
+        background-position: left -1px;
     }
 
     .department_landing_page_promoted_links .row .span3 {
@@ -1720,7 +1661,7 @@
         line-height: normal;
     }
     .landing-simple-links-col, .department-scrollbox {
-        width: 100% !important;
+        width: 100%;
         float: none;
         margin-left: 0;
     }
@@ -1782,11 +1723,11 @@
 
 /*
     .form-standard .cover {
-        background: url(http://www.lsbu.ac.uk/__data/assets/image/0003/23718/arrow_down_15.png?v=0.1.1) right center no-repeat;
+        background: url(mysource_files/arrow_down_15.png) right center no-repeat;
     }
 
     #form_email_17687_submit {
-        background: url(http://www.lsbu.ac.uk/__data/assets/image/0003/23718/arrow_down_15.png?v=0.1.1) right center no-repeat;
+        background: url(mysource_files/arrow_down_15.png) right center no-repeat;
     }
 */
 
@@ -1830,14 +1771,9 @@
     }
     */
     /* top level landing page */
-    .top_level_landing .row.featured-landing .span3 {
-        width: 100%;
-        margin-left:0;
-    }
     .top_level_landing .big-thumb {
         height: auto;
         background: none !important;
-        min-height: auto !important;
     }
     .big_thumb_image_mobile {
         max-width: 100%;
@@ -1868,9 +1804,6 @@
     /* campaign landing page */
     #campaign .title {
         width: 30%;
-    }
-    #main_content_main_column #campaign {
-        padding: 0 9%;
     }
     /*
     #campaign_landing_page_slider {
@@ -1978,7 +1911,7 @@
     }
 
     .ev-list .date {
-        background-image: url("http://www.lsbu.ac.uk/__data/assets/image/0012/4440/cloud.png?v=0.0.3");
+        background-image: url(mysource_files/cloud2.png);
     }
 
     .slider_image_title_mobile, .home_banner_image_title_mobile_description {

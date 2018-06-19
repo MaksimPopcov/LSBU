@@ -81,7 +81,7 @@
 *   3.1 Resize home slider
 *   3.2 Align carousel
 *   3.3 remove .play-video button (sometimes they exist on top level landing pages) - fix for android browsers
-*   3.4 Burger menu on Course pages, mobile only
+*   3.4 Burger menu on Course pages and cross site, mobile only
 *   3.5 Adding class to when Courses in top nav burger menu has got class of active
 */
 

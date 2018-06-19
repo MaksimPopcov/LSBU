@@ -1,0 +1,739 @@
+<style>
+iframe {
+    width: 100% !important;
+}
+  
+/*Media Query*/
+
+@media all and (max-width: 767px) and (min-width: 320px) {
+
+
+/*MOBILE 573*/
+
+    #campaign #course_search_frame .span5 {
+        width: 80% !important;
+        max-width: 100% !important;
+    }
+    /*436 mobile-responsive*/
+    #footer_location_map_holder {
+        width: 100%;
+        float: left;
+    }
+  
+  /*Campaign page*/
+  
+    #campaign_landing_page_video a.play-video {
+        background-size: 100%;
+        right: auto;
+        left: 20px;
+        top: 10px !important;
+        height: 55px;
+        width: 55px;
+    }
+    #campaign_landing_page_video a.play-video:hover {
+        background-position: 0 -58px;
+    }
+    .campaign_landing_page #page_title,
+    .campaign_landing_page #main_content_main_column {
+        margin-left: 5% !important;
+    }
+    .campaign_landing_page #breadcrumbs {
+        width:auto !important;
+    }
+    .campaign_landing_page .clp .accordion {
+        float: left;
+    }
+    .campaign_landing_page  #breadcrumbs .span12 {
+        margin-left: 0;
+    }
+    #campaign .row3 .col-3 {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+        position: relative;
+        float: none;
+    }
+    #campaign .row3 .col-3:last-child {
+        margin-right: auto;
+    }
+    #campaign h2 {
+        text-align: center;
+    }
+    #campaign .button_link_blue {
+        width: 92.8%;
+        margin: 0;
+        position: relative;
+    }
+    #campaign div .picholder {
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        max-width: 535px;
+    }
+    #campaign div .picholder:last-child {
+        margin-right: auto;
+    }
+    #campaign #news_listing > li {
+        padding:6px !important;
+    }
+    
+    #news_listing .media a.pull-left{
+        margin:0;
+    }
+    #news_listing > li > a.pull-left img {
+        max-width: 90%;
+    }
+    #campaign #news_listing > li.media.last-child a {
+        float: none !important;
+        padding-top: 0;
+    }
+    
+    #campaign #news_listing > li.media.last-child .media-heading {
+        margin-top: 0;
+        display: inline-block;
+    }
+    #campaign img.media-object {
+        padding: 2px;
+        border: 0px solid #fff;
+    }
+    /*Course Search*/
+    #campaign form.row {
+        margin: 0 auto;
+        display: inline-block;
+        margin-left: -10px !important;
+    }
+    #campaign #course_search_frame {
+        padding-right: 0 !important;
+        margin-bottom: 30px !important;
+    }
+    #campaign #course_search_submit {
+        position: absolute !important;
+        top: 13px !important;
+        right: 5px !important;
+    }
+    /*Contact info*/
+    #campaign_rhs_contact_information.bottom_box {
+        margin-left: 6px;
+    }
+    #campaign #campaign_rhs_contact_information .header {
+        width: 55%;
+    }
+    #campaign #campaign_rhs_contact_information .button_link_blue {
+        width: 40%;
+    }
+    #campaign_rhs_contact_information.bottom_box p {
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .campaign_landing_page #main_content_main_column, .campaign_landing_page #page_title {
+        padding: 0 !important;
+    }
+    
+}
+
+
+
+@media all and (max-width: 990px) and (min-width: 768px) {
+    /*Header and Menu*/
+    #main_menu {
+        margin-left: 210px;
+    }
+    #main_menu_list > li a {
+        font-size: 0.7em;
+        padding: 6px 5px;
+    }
+    header,
+    nav,
+    #breadcrumbs,
+    #main_content {
+        max-width: 826px;
+    }
+    form.span7.search-space {
+        margin: 20px 0 0 285px;
+    }
+    #main_menu_list > li ul.dropdown-menu li.nav-header a {
+        font-size: 1em;
+    }
+    .megamenu-column {
+        width: 184px;
+    }
+    .dropdown-menu {
+        max-width: 810px !important;
+    }
+    #top_search_input {
+        font-size: 14px;
+        width: 60px;
+        height: 30px;
+    }
+    #top_search_submit {
+        margin-top: 0;
+    }
+    input#top_search_input:focus {
+        width: 150px;
+    }
+    #top_logo {
+        margin-top: -20px;
+    }
+    #top_logo a {
+        margin-top: -100px;
+    }
+    #top_logo::before {
+        background-size: 190px 86px;
+    }
+    li[data-pageid='1340'] ul.dropdown-menu {
+      left: -210px !important;
+    }
+    li[data-pageid='1396'] ul.dropdown-menu {
+      left: -120px !important;
+    }
+
+    /*Course Search*/
+    #course_search_desc {
+      width: 100%;
+    }
+    #course_search_frame .span5 {
+      margin: 0 auto;
+      padding: 10px 0 0 0;
+      margin-top: 10px;
+    }
+    #course_search_desc p.line2 {
+      left: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+    #course_search_frame {
+      width: 100%;
+      height: 120px;
+    }
+    #course_search_submit {
+      position: relative;
+      right: 1px;
+      top: -51px;
+    }
+
+    /*Footer*/
+    #footer_frame .container {
+      width: 100% !important;
+    }
+    #footer_bottom_social,
+    #footer_bottom_links {
+        width: 100%;
+    }
+    #footer_location_map_holder {
+        width: 100%;
+        margin: 20px 0 0 20px;
+    }
+    #footer_location_map_holder {
+        width: 100%;
+        margin: 20px 0 30px 20px;
+    }
+    #footer_frame .row-two {
+        float: left;
+        margin-top: 20px;
+    }
+    #footer_frame .row {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #footer_frame {
+        min-width: 900px;
+    }
+    #footer_bottom_links_list a {
+        font-size: 1.06em;
+    }
+    #latest_feeds_twitter_col .latest_news_item:after {
+        font-size: 45px;
+    }
+    
+    /*Campaign Landing page*/
+    .campaign_landing_page #page_title,
+    .campaign_landing_page #main_content_main_column {
+        width: 94%;
+        margin: auto 3% !important;
+    }
+    #campaign .button_link_blue {
+        width: 92%;
+    }
+    #campaign .picholder p {
+        bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 1680px) and (min-width: 981px){
+   .campaign_landing_page #page_title,
+   .campaign_landing_page #main_content_main_column {
+       margin-left: 35px !important;
+   }
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    body.campaign_landing_page {
+      background: #f5f5f5 url(http://www.lsbu.ac.uk/__data/assets/image/0018/123327/body-bg.png?v=0.0.4) 0 -35px repeat-x;
+    }
+    .campaign_landing_page header, .campaign_landing_page nav, .campaign_landing_page #footer_frame .container, .campaign_landing_page #main_content, .campaign_landing_page #breadcrumbs {
+      width: 90% !important;
+    }
+    .campaign_landing_page #logo_search_section .span7 {
+      width: 100% !important;
+      margin: 20px auto;
+      float: right;
+      position: relative;
+    }
+    .campaign_landing_page #logo_search_section {float: none;}
+    
+    .campaign_landing_page #top_logo {
+      margin-top: 0;
+    }
+    .campaign_landing_page #campaign_landing_page_video img, 
+    .campaign_landing_page #campaign_landing_page_slider img {
+        margin: 0 auto;
+        display: block;
+    }
+    #campaign .picholder:last-child {
+        margin-right: 0;
+        float: right;
+    }
+    #campaign form.row {
+        padding-right: 0 !important;
+    }
+    #campaign_rhs_contact_information.bottom_box {
+        margin-right: 0 !important;
+    }
+    
+}
+
+
+@media screen and (min-width: 1400px) {
+    .slider_image_title,
+    .campaign_landing_page_video_title,
+    .campaign_landing_page_video_subtitle {
+        left: 15% !important;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+
+    #campaign .picholder h4 {
+        color: #232323;
+        font-weight: bold;
+    }
+    #campaign_landing_page_video a.play-video {
+        right: 15%;
+    }
+    .slider_image_title,
+    .campaign_landing_page_video_title,
+    .campaign_landing_page_video_subtitle {
+        left: 15% !important;
+    }
+    .campaign_landing_page #campaign_landing_page_video, 
+    .campaign_landing_page #campaign_landing_page_slider {;
+        margin: 0 auto !important;
+    }
+}
+
+@media screen and (min-width: 1920px) { 
+    #campaign_landing_page_video a.play-video {
+        right: 15%;
+    }
+    .slider_image_title, 
+    .campaign_landing_page_video_title,
+    .campaign_landing_page_video_subtitle {
+        left: 15% !important;
+    }
+}
+/*media Query Ends*/
+
+/*Main Content*/
+h2 {
+    font-size: 2.4em;
+    margin-top: 20px !important;
+}
+#campaign .row3 .col-3 p:before {
+    color: #ffffff;
+}
+#campaign_landing_page_slider {
+    height: auto;
+}
+#main_menu .navbar-inner {
+    min-height: 34px;
+}
+.container, 
+.navbar-static-top .container, 
+.navbar-fixed-top .container, 
+.navbar-fixed-bottom .container {
+    width: auto;
+}
+.container {
+    min-height: auto;
+    margin: 0px auto;
+}
+#main_content {
+    width: 100%;
+    min-width: auto;
+}
+.row {
+    margin-left: 0px;
+    margin-bottom: 0px !important;
+}
+.whole_content_holder {
+    width: auto;
+}
+.span12 {
+    width: auto;
+}
+.campaign_landing_page #logo_search_section .span7 {
+    width: 540px;
+}
+
+/*Footer*/
+#footer_frame {
+    margin-top: 0;
+}
+.campaign_landing_page .row-two {
+    float: right;
+    padding-right: 30px;
+}
+#footer_bottom_social {
+    float: right;
+}
+.campaign_landing_page #footer_frame .span3{
+    float: left;
+    margin: 0px 20px; 
+}
+.campaign_landing_page header, 
+.campaign_landing_page nav, 
+.campaign_landing_page #footer_frame .container, 
+.campaign_landing_page #main_content, 
+.campaign_landing_page #breadcrumbs
+{
+    width: 1002px;
+    position: relative;
+    margin: 0px auto;
+}
+.campaign_landing_page [class*="span"] {
+    float: none;
+    margin-left: 0px;
+}
+.campaign_landing_page #campaign_landing_page_video {
+    height: auto;    
+    margin-left: 0;
+}
+
+/*Featured boxes starts*/
+#campaign .row3 {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#campaign .col-3 {
+    width: 27%;
+    margin-right: 2%;
+    float: left;
+    text-align: center;
+    padding: 2.4%;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px !important;
+    -webkit-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    -moz-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    box-shadow: 2px 1px 4px 3px #e6e6e6;
+    background:#ff9933;
+}
+#campaign .col-3 h2 {
+    text-align: center;
+}
+#campaign .col-3:last-child {
+    margin-right: 0;
+}
+#campaign .col-3 p {
+    color: #fff;
+}
+#campaign p.percentage {
+    font-size: 4em;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 0;
+    display: inline-block;
+    min-height: 94px;
+}
+#campaign.col-3 p.last-child {
+    background: rgb( 247,247,247); /*Unsupported browsers fallback*/
+    background: rgba(247,247,247,0.5);
+    padding: 8px;
+    margin-bottom: 0;
+}
+.fa {
+    line-height: 90px;
+}
+
+/*Featured boxes ends*/
+
+/*Key industry */
+#campaign .holder {
+    max-width: 100%;
+    background: #fff;
+    display: inline-block;    
+    margin-top: 20px;
+}
+#campaign .picholder {
+    width: 43%;
+    margin-right: 2%;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2%;
+    padding-top: 0;
+    border: 6px solid #fff;
+    -webkit-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    -moz-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    box-shadow: 2px 1px 4px 3px #e6e6e6;
+}
+#campaign .picholder:last-child {
+    margin-right: 0;
+}
+#campaign .picholder p {
+    margin-bottom: 0;
+    padding: 10px;
+    overflow: hidden;
+    color: #231f20;
+
+}
+#campaign form {
+    background: #fff;
+}
+
+/*Key industry ends */
+
+/*CTA styles*/
+#campaign .button_link_blue {
+    width: 48%;
+    float: left;
+    margin: 0px 3% 0 0;
+    position: relative;
+    padding: 0;
+}
+
+#campaign .button_link_blue:last-child {
+    margin-right:0;
+}
+p.pbtn {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+/*Case studys*/
+#campaign #news_listing > li {
+    border: 0;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#campaign .media-heading a {
+    font-size: 1em;
+    font-weight:normal;
+    line-height: 1.2 !important;
+    font-family: "Gilroy-Regular";
+}
+
+#campaign img.media-object {
+    padding: 2%;
+    border: 6px solid #fff;
+    -webkit-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    -moz-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    box-shadow: 2px 1px 4px 3px #e6e6e6;
+}
+#campaign .media > .pull-left {
+    margin-right: 30px;
+    margin-left: 4px;
+}
+#campaign #news_listing .media-body p {
+    font-weight:normal;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+}
+#tab_case_studies #news_listing li.media.odd a { float:right; margin-right: 0; }
+#tab_case_studies #news_listing .media-heading { margin-top: 0;display: inline-block;}
+#tab_case_studies #news_listing li.media.odd a img {margin-left: 20px;}
+
+/*Case studys ends*/
+
+
+/*Course search*/
+
+#campaign form {
+    background: #fff;
+    padding-right:4px;
+}
+#campaign form.row {
+    margin-left: -20px;
+    margin-top: 20px;
+    padding: 0 13px 0 17px;
+}
+
+#campaign #course_search_frame {
+    width: 100%;
+}
+#campaign #course_search_desc {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+}
+#campaign #course_search_desc p{
+    margin: 0 auto;
+    left: auto;
+    position: relative;
+    top: 90px;
+    z-index: 3;
+}
+#campaign #course_search_frame .row {
+    margin-left: 0;
+    margin-bottom:0;
+}
+#campaign #course_search_frame .span5 {
+    position: relative;
+    margin: 0 auto;
+    width: 420px;
+    display: inline-block;
+    float: none;
+}
+#campaign #course_search_name {
+    font-family: "Gilroy-Regular";
+    font-size: 1.125em;
+    float: right;
+    width: 100%;
+    height: 33px;
+    padding-right: 3%;
+    padding-left: 3%;
+    color: #868686;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    background-clip: padding-box;
+    background: #FFF;
+    -webkit-appearance: none;
+}
+#campaign #course_search_submit {
+    font-size: 0;
+    height: 36px;
+    width: 36px;
+    border: 0;
+    background: url(http://www.lsbu.ac.uk/__data/assets/image/0019/123328/course-search-btn.png?v=0.0.5) left top no-repeat;
+    position: relative;
+    margin: 0 auto !important;
+    color: transparent;
+    top: -48px;
+    right: -186px;
+}
+
+/*Course search ends*/
+
+/*Full Width*/
+h1 {
+    margin: 10px 0;
+}
+.campaign_landing_page #main_content_main_column {
+    width: 94%;
+    margin: 0 auto;
+}
+
+/*Contact Info*/
+
+#campaign_rhs_contact_information.bottom_box {
+    color: #737373;
+    overflow: hidden;
+    margin-right: 15px;
+    padding-top: 0;
+    border:0;
+   /*padding: 2%;
+    border: 24px solid #fff;
+    -webkit-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    -moz-box-shadow: 2px 1px 4px 3px #e6e6e6;
+    box-shadow: 2px 1px 4px 3px #e6e6e6;*/
+}
+#campaign_rhs_contact_information .button_link_blue {
+    width: 20%;
+    float: left;
+}
+#campaign_rhs_contact_information .header {
+    font-family: "Gilroy-SemiBold";
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    margin: 20px 0;
+    width: 36%;
+    color: #25a196;
+    border:0;
+    /*border-bottom: 2px solid #25a196;*/
+}
+#campaign_rhs_contact_information.bottom_box p {
+    margin-bottom: 10px;
+}
+#campaign_landing_page_video a.play-video {
+    top: 25%;
+}
+.campaign_landing_page #campaign_landing_page_video {
+    margin-bottom: 10px;
+}
+.campaign_landing_page #main_content_main_column, .campaign_landing_page #page_title {
+    width: 76%;
+    margin: 0 auto;
+    padding: 0 9%;
+    overflow: hidden;
+}
+
+.campaign_landing_page #courses_listing .button_link_blue {
+    display: block;
+    width: 130px;
+    height: 30px;
+    position: relative;
+    overflow: visible;
+    padding-bottom: 6px;
+    float: none;
+}
+.department-scrollbox {
+    display:none;
+}
+.department-scrollbox {
+    display: block !important;
+    width: 45%;
+    margin-left: 0;
+}
+
+.department-scrollbox:last-child {
+    margin-left: 5%;
+}
+ 
+/*IE8 Hacks*/
+
+.campaign_landing_page #page_title {
+  margin-left: 34px\9;
+}
+.campaign_landing_page #campaign .col-3 {
+    width:26%\9;
+}
+.campaign_landing_page .media-body {
+    margin-top:10px\9;
+}
+.campaign_landing_page #campaign .picholder {
+   width:42%\9; 
+}
+.campaign_landing_page #campaign .button_link_blue {
+    width:47%\9;
+}
+
+.campaign_landing_page #campaign .col-3 {
+    height:300px\9;
+}
+
+</style>
+
