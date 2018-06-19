@@ -1091,6 +1091,9 @@ FIDDLER
       position: relative;
       width: 100%;
     }
+    #left_navigation ul.menu_level_2 > li > ul li a {
+      width: auto;
+    }
     #left_navigation ul.menu_level_1 {
       display: inline-block;
       width: 100%;

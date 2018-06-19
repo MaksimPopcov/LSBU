@@ -542,7 +542,7 @@ table.info th{
 }
 
 .big-thumb{
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: 100% !important;
   position: relative;
   height: 300px;
@@ -553,7 +553,7 @@ table.info th{
   display: table;
   height: 100%;
   float: left;
-  width: 430px;
+  width: 100%;
   max-width: 430px;
 }
 
